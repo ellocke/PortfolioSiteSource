@@ -1,6 +1,8 @@
-baseURL = "https://dadascience.design/"
+baseURL = "https://dadascience.design/portfolio"
 languageCode = "en-us"
 title = "fubits@git"
+
+publishDir = "../ellocke.github.io/portfolio"
 
 theme = "meghna-hugo"
 
@@ -9,23 +11,28 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 # Menu
 [menu]
     [[menu.nav]]
-    name = "About"
-    URL = "/about"
-    weight = 2
+    name = "Home"
+    URL = "../"
+    weight = 1
 
     [[menu.nav]]
     name = "Posts"
-    URL = "/posts"
-    weight = 3
+    URL = "../posts"
+    weight = 2
 
     [[menu.nav]]
     name = "Portfolio"
-    URL = "/"
-    weight = 4
+    URL = "../portfolio"
+    weight = 3
     
     [[menu.nav]]
     name = "Talks"
-    URL = "/talks"
+    URL = "../talks"
+    weight = 4
+    
+    [[menu.nav]]
+    name = "About"
+    URL = "../about"
     weight = 5
 
 # Site params
@@ -39,71 +46,74 @@ author = "Ilja / fubits"
 
 custom_css = ["css/custom.css"]
 
-    # Banner Section
-    [params.banner]
-    enable = true
-    bgImage = "images/slider/hero-area.jpg"
-    icon = "tf-ion-play"
-    heading = "Visual Portfolio"
-    content= "Computational Social Science | Information Visualisation | GIS/Mapping | HCI/UX | Open Science"
-    btn = true
-    btnText="Explore"
-    btnURL="#our-work"
+# Banner Section
+[params.banner]
+enable = true
+bgImage = "images/backgrounds/john-barkiple-539580-unsplash.jpg"
+icon = "tf-ion-play"
+heading = "Freelance Portfolio"
+content= "Computational Social Science | Information Visualisation | GIS/Mapping | HCI/UX | Open Science"
+btn = true
+btnText="Explore"
+btnURL="#mission"
 
-    # call to action
-    [params.cta]
-    enable = true
-    title = "Great Design & Incredible Features"
-    content = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tenetur odio impedit incidunt? Omnis accusantium ea reiciendis, fugit commodi nostrum."
-    btnURL = "#"
-    btnText = "Start a project with us"
+# call to action
+[params.cta]
+enable = true
+title = "Custom Solutions for Non-Profit Research"
+content = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tenetur odio impedit incidunt? Omnis accusantium ea reiciendis, fugit commodi nostrum."
+btnURL = "#"
+btnText = "Contact Me"
 
-    # counter
-    [params.counter]
-    enable = false
-    bgImage = "images/backgrounds/bg-1.jpg"
-        [[params.counter.counterItem]]
-        title = "Happy Clients"
-        icon = "tf-ion-android-happy"
-        count = "320"
+# counter
+[params.counter]
+enable = false
+bgImage = "images/backgrounds/bg-1.jpg"
+    [[params.counter.counterItem]]
+    title = "Happy Clients"
+    icon = "tf-ion-android-happy"
+    count = "321"
 
-        [[params.counter.counterItem]]
-        title = "Projects completed"
-        icon = "tf-ion-archive"
-        count = "565"
+    [[params.counter.counterItem]]
+    title = "Projects completed"
+    icon = "tf-ion-archive"
+    count = "565"
 
-        [[params.counter.counterItem]]
-        title = "Positive feedback"
-        icon = "tf-ion-thumbsup"
-        count = "95"
+    [[params.counter.counterItem]]
+    title = "Positive feedback"
+    icon = "tf-ion-thumbsup"
+    count = "95"
 
-        [[params.counter.counterItem]]
-        title = "Cups of Coffee"
-        icon = "tf-ion-coffee"
-        count = "2500"
+    [[params.counter.counterItem]]
+    title = "Cups of Coffee"
+    icon = "tf-ion-coffee"
+    count = "2500"
 
-    # footer
-    [params.footer]
-        copyright = "© Ilja / fubits; Hugo Theme: Meghna by Themefisher Team"
-        copyrightURL = "http://www.dadascience.design"
+# footer
+[params.footer]
+    copyright = "© Ilja / fubits"
+    copyrightURL = "http://www.dadascience.design/about"
+    theme = "© Meghna Hugo by Themefisher"
+    themeURL = "https://themes.gohugo.io/meghna-hugo/"
+    themeLicense = "CC BY 3.0"
+    themeLicenseURL = "https://creativecommons.org/licenses/by/3.0/"
+    pageLicense = "CC BY-SA 4.0"
+    pageLicenseURL = "https://creativecommons.org/licenses/by-sa/4.0/"
 
-        # social Icons
-        [[params.footer.socialIcon]]
-        icon = "tf-ion-social-facebook"
-        url = "#"
+    # social Icons
 
-        [[params.footer.socialIcon]]
-        icon = "tf-ion-social-twitter"
-        url = "https://twitter.com/fubits"
+    [[params.footer.socialIcon]]
+    icon = "tf-ion-social-twitter"
+    url = "https://twitter.com/fubits"
 
-        [[params.footer.socialIcon]]
-        icon = "tf-ion-social-google-outline"
-        url = "#"
+    [[params.footer.socialIcon]]
+    icon = "tf-ion-key"
+    url = "#"
 
-        [[params.footer.socialIcon]]
-        icon = "tf-ion-social-youtube"
-        url = "#"
+    [[params.footer.socialIcon]]
+    icon = "tf-ion-social-github"
+    url = "#"
 
-        [[params.footer.socialIcon]]
-        icon = "tf-ion-social-linkedin"
-        url = "#"
+    [[params.footer.socialIcon]]
+    icon = "tf-ion-social-linkedin"
+    url = "#"

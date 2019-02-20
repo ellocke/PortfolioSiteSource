@@ -1,0 +1,15 @@
+enable : true
+heading : My
+headingSpan : Philosophy
+aboutItem : 
+- icon : tf-strategy
+  title : Data
+  content : Impact needs Action. Action needs Decisions. Decisions need Evidence and Insights.
+
+- icon : tf-tools
+  title : Science
+  content : Before transitioning to Computer Science I studied Political Science and Communication Studies in Berlin and Leeds. I worked in research, PR, and policy (Think Tanks).
+
+- icon : tf-anchor2
+  title : Design
+  content : UX / Data Viz / Info Viz / Web Development / Reserach Data Management / User-centric Workflows

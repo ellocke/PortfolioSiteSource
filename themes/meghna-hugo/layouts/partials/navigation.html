@@ -19,18 +19,22 @@
                 {{ if .IsHome }}
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto navigation-menu">
-                                <li class="nav-item"><a class="nav-link" data-scroll href="#body">{{ with $.Site.Params.home }}{{ . }}{{ end }}</a></li>
+                               <!-- <li class="nav-item"><a class="nav-link" data-scroll href="#body">{{ with $.Site.Params.home }}{{ . }}{{ end }}</a></li> -->
                                 {{ range $.Site.Menus.nav }}
-                                <li class="nav-item"><a class="nav-link" data-scroll href="#{{ .URL }}">{{ .Name }}</a></li>
-                                {{ end }}
+                                {{if eq .Name "Portfolio"}}
+                                        <li class="nav-item"><a class="nav-link active" data-scroll href="{{ .URL }}">{{ .Name }}</a></li>
+                                        {{ else }}
+                                        <li class="nav-item"><a class="nav-link" data-scroll href="{{ .URL }}">{{ .Name }}</a></li>
+                                        {{ end }}
+                        {{ end }}
                         </ul>
                 </div>
                 {{ else }}
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto navigation-menu">
-                                <li class="nav-item"><a class="nav-link" data-scroll href="{{ $.Site.BaseURL }}#body">{{ with $.Site.Params.home }}{{ . }}{{ end }}</a></li>
+                                <!--<li class="nav-item"><a class="nav-link" data-scroll href="{{ $.Site.BaseURL }}#body">{{ with $.Site.Params.home }}{{ . }}{{ end }}</a></li>-->
                                 {{ range $.Site.Menus.nav }}
-                                <li class="nav-item"><a class="nav-link" data-scroll href="{{ $.Site.BaseURL }}#{{ .URL }}">{{ .Name }}</a></li>
+                                <li class="nav-item"><a class="nav-link" data-scroll href="{{ $.Site.BaseURL }}{{ .URL }}">{{ .Name }}</a></li>
                                 {{ end }}
                         </ul>
                 </div>
