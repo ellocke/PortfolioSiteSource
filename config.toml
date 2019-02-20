@@ -1,4 +1,4 @@
-baseURL = "https://dadascience.design/portfolio"
+baseURL = "https://dadascience.design/"
 languageCode = "en-us"
 title = "fubits@git"
 
@@ -10,34 +10,32 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [menu]
     [[menu.nav]]
     name = "About"
-    URL = "about"
+    URL = "/about"
     weight = 2
 
     [[menu.nav]]
-    name = "Talks"
-    URL = "services"
-    weight = 5
+    name = "Posts"
+    URL = "/posts"
+    weight = 3
 
     [[menu.nav]]
     name = "Portfolio"
-    URL = "portfolio"
+    URL = "/"
     weight = 4
-
+    
     [[menu.nav]]
-    name = "Posts"
-    URL = "our-team"
-    weight = 3
-
-
-
+    name = "Talks"
+    URL = "/talks"
+    weight = 5
 
 # Site params
 [params]
-home= "Portfolio"
+home= "fubits@git Portfolio"
 logo = "images/logo.png"
+
 # Meta data
-description = "Responsive Multipurpose Parallax HTML5 Template"
-author = "Themefisher"
+description = "fubits@git Portfolio"
+author = "Ilja / fubits"
 
 custom_css = ["css/custom.css"]
 
@@ -47,10 +45,10 @@ custom_css = ["css/custom.css"]
     bgImage = "images/slider/hero-area.jpg"
     icon = "tf-ion-play"
     heading = "Visual Portfolio"
-    content= "Computational Social Science | Information Visualisation | Mapping | UX"
+    content= "Computational Social Science | Information Visualisation | GIS/Mapping | HCI/UX | Open Science"
     btn = true
     btnText="Explore"
-    btnURL="#services"
+    btnURL="#our-work"
 
     # call to action
     [params.cta]
@@ -62,7 +60,7 @@ custom_css = ["css/custom.css"]
 
     # counter
     [params.counter]
-    enable = true
+    enable = false
     bgImage = "images/backgrounds/bg-1.jpg"
         [[params.counter.counterItem]]
         title = "Happy Clients"
@@ -86,8 +84,8 @@ custom_css = ["css/custom.css"]
 
     # footer
     [params.footer]
-        copyright = "Hugo Theme: Meghna by Themefisher Team"
-        copyrightURL = "http://www.themefisher.com"
+        copyright = "© Ilja / fubits; Hugo Theme: Meghna by Themefisher Team"
+        copyrightURL = "http://www.dadascience.design"
 
         # social Icons
         [[params.footer.socialIcon]]
@@ -96,7 +94,7 @@ custom_css = ["css/custom.css"]
 
         [[params.footer.socialIcon]]
         icon = "tf-ion-social-twitter"
-        url = "#"
+        url = "https://twitter.com/fubits"
 
         [[params.footer.socialIcon]]
         icon = "tf-ion-social-google-outline"
@@ -108,12 +106,4 @@ custom_css = ["css/custom.css"]
 
         [[params.footer.socialIcon]]
         icon = "tf-ion-social-linkedin"
-        url = "#"
-
-        [[params.footer.socialIcon]]
-        icon = "tf-ion-social-dribbble-outline"
-        url = "#"
-
-        [[params.footer.socialIcon]]
-        icon = "tf-ion-social-pinterest-outline"
         url = "#"
