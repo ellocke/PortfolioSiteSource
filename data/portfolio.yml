@@ -16,14 +16,14 @@ portfolioItem :
     image : images/portfolio/map_syria_main.jpg
     icon : tf-ion-android-search
     URL : #
-    title : Tag Design
+    title : Nowhere to Hide
     description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
     
   - types : development
     image : images/portfolio/map_syria_cases.jpg
     icon : tf-ion-android-search
     URL : #
-    title : Sound system
+    title : Nowhere to Hide
     description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
 
   - types : photography development
@@ -41,16 +41,9 @@ portfolioItem :
     description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
     
   - types : photography development
-    image : images/portfolio/map_mena.jpg.jpg
+    image : images/portfolio/urban_spaces.jpg
     icon : tf-ion-android-search
     URL : #
-    title : Bottol Label
-    description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
-    
-  - types : design
-    image : images/portfolio/portfolio-5.jpg
-    icon : tf-ion-android-search
-    URL : #
-    title : Shopping Bag
+    title : Urban Spaces
     description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
     
