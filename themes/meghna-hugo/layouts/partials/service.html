@@ -1,4 +1,4 @@
-{{ if .Site.Data.service.enable}}
+{{ if .Site.Data.stack.enable}}
 {{"<!-- service -->" | safeHTML }}
 <section id="services" class="bg-one section">
     <div class="container">
@@ -6,14 +6,14 @@
             <div class="col-lg-12">
                 {{"<!-- section title -->" | safeHTML }}
                 <div class="title text-center wow fadeIn" data-wow-duration="500ms">
-                    <h2>{{ with .Site.Data.service.heading }} {{ . }} {{ end }}<span class="color">{{ with .Site.Data.service.headingSpan }} {{ . }} {{ end }}</span></h2>
+                    <h2>{{ with .Site.Data.stack.heading }} {{ . }} {{ end }}<span class="color">{{ with .Site.Data.stack.headingSpan }} {{ . }} {{ end }}</span></h2>
                     <div class="border-meghna"></div>
                 </div>
             </div>
             {{"<!-- /section title -->" | safeHTML }}
 
-            {{ range .Site.Data.service.serviceItem}}
-            {{"<!-- Single Service Item -->" | safeHTML }}
+            {{ range .Site.Data.stack.stackItem}}
+            {{"<!-- Single Stack Item -->" | safeHTML }}
             <article class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-duration="500ms">
                 <div class="service-block text-center">
                     <div class="service-icon text-center">
@@ -23,7 +23,7 @@
                     <p>{{ .content }}</p>
                 </div>
             </article>
-            {{"<!-- End Single Service Item -->" | safeHTML }}
+            {{"<!-- End Single Stack Item -->" | safeHTML }}
             {{ end }}
         </div>
     </div>

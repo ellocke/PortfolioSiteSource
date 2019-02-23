@@ -1,13 +1,9 @@
 enable : true
 heading : My
 headingSpan : Stack
-serviceItem :
+stackItem :
   - icon : tf-globe
     title : Design Thinking
-    content : Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.
-
-  - icon : tf-globe
-    title : Project Management
     content : Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.
     
   - icon : tf-ion-laptop
