@@ -53,16 +53,16 @@ enable = true
 bgImage = "images/backgrounds/john-barkiple-539580-unsplash.jpg"
 icon = "tf-ion-play"
 heading = "Freelance Portfolio"
-content= "Computational Social Science | Information Visualisation | GIS/Mapping | HCI/UX | Open Science"
+content= "Computational Social Science | HCI/UX | Data & Information Visualisation | GIS/Mapping | Open Science | Research Data Management"
 btn = true
 btnText="Explore"
-btnURL="#mission"
+btnURL="philosophy"
 
 # call to action
 [params.cta]
 enable = true
 title = "Custom Solutions for Non-Profit Research"
-content = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tenetur odio impedit incidunt? Omnis accusantium ea reiciendis, fugit commodi nostrum."
+content = "TBD"
 btnURL = "#"
 btnText = "Contact Me"
 
@@ -70,25 +70,6 @@ btnText = "Contact Me"
 [params.counter]
 enable = false
 bgImage = "images/backgrounds/bg-1.jpg"
-    [[params.counter.counterItem]]
-    title = "Happy Clients"
-    icon = "tf-ion-android-happy"
-    count = "321"
-
-    [[params.counter.counterItem]]
-    title = "Projects completed"
-    icon = "tf-ion-archive"
-    count = "565"
-
-    [[params.counter.counterItem]]
-    title = "Positive feedback"
-    icon = "tf-ion-thumbsup"
-    count = "95"
-
-    [[params.counter.counterItem]]
-    title = "Cups of Coffee"
-    icon = "tf-ion-coffee"
-    count = "2500"
 
 # footer
 [params.footer]
@@ -101,20 +82,20 @@ bgImage = "images/backgrounds/bg-1.jpg"
     pageLicense = "CC BY-SA 4.0"
     pageLicenseURL = "https://creativecommons.org/licenses/by-sa/4.0/"
 
-    # social Icons
+# social Icons
 
-    [[params.footer.socialIcon]]
-    icon = "tf-ion-social-twitter"
-    url = "https://twitter.com/fubits"
+[[params.footer.socialIcon]]
+icon = "tf-ion-social-twitter"
+url = "https://twitter.com/fubits"
 
-    [[params.footer.socialIcon]]
-    icon = "tf-ion-key"
-    url = "#"
+[[params.footer.socialIcon]]
+icon = "tf-ion-key"
+url = "https://keybase.io/fubits/"
 
-    [[params.footer.socialIcon]]
-    icon = "tf-ion-social-github"
-    url = "#"
+[[params.footer.socialIcon]]
+icon = "tf-ion-social-github"
+url = "https://github.com/ellocke/"
 
-    [[params.footer.socialIcon]]
-    icon = "tf-ion-social-linkedin"
-    url = "#"
+[[params.footer.socialIcon]]
+icon = "tf-ion-social-linkedin"
+url = "https://www.linkedin.com/in/ilja-sperling/"
