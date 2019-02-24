@@ -35,12 +35,6 @@
 		{{"<!-- Bootstrap 4.2 + Popper -->" | safeHTML}}
 		{{ $bs := resources.Get "js/bootstrap.bundle.js" | minify}}
 		<script type="text/javascript" src="{{ $bs.Permalink }}"></script>
-		{{"<!-- Slick Carousel -->" | safeHTML}}
-		<script type="text/javascript" src="{{ "plugins/slick-carousel/slick/slick.min.js" | absURL}}"></script>
-		{{"<!-- Portfolio Filtering -->" | safeHTML}}
-		<script type="text/javascript" src="{{ "plugins/mixitup/mixitup.min.js" | absURL}}"></script>
-		{{"<!-- Magnific popup -->" | safeHTML}}
-		<script type="text/javascript" src="{{ "plugins/magnific-popup/dist/jquery.magnific-popup.min.js" | absURL}}"></script>
 		{{"<!-- Number Counter Script -->" | safeHTML}}
 		<script type="text/javascript" src="{{ "plugins/count-to/jquery.countTo.js" | absURL}}"></script>
 		{{"<!-- wow.min Script -->" | safeHTML}}

@@ -5,3 +5,11 @@
 .client-thumb .img-fluid {
     max-width: 150px!important;
 }
+
+.caption h4 {
+    color: #57cbcc;
+}
+
+.navbar-brand {
+    font-family: quattrocento sans, sans-serif;
+}

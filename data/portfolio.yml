@@ -15,35 +15,35 @@ portfolioItem :
   - types : design
     image : images/portfolio/map_syria_main.jpg
     icon : tf-ion-android-search
-    URL : #
+    URL : https://www.gppi.net/2019/02/17/the-logic-of-chemical-weapons-use-in-syria
     title : Nowhere to Hide
-    description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    description : 
     
   - types : development
     image : images/portfolio/map_syria_cases.jpg
     icon : tf-ion-android-search
-    URL : #
+    URL : https://www.gppi.net/2019/02/17/the-logic-of-chemical-weapons-use-in-syria
     title : Nowhere to Hide
-    description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    description : 
 
   - types : photography development
     image : images/portfolio/map_mena.jpg
     icon : tf-ion-android-search
-    URL : #
-    title : Bottol Label
-    description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    URL : http://dietz-verlag.de/isbn/9783801205485/Krieg-vor-der-Haustuer-Die-Gewalt-in-Europas-Nachbarschaft-und-was-wir-dagegen-tun-koennen-Sarah-Brockmeier-Philipp-Rotmann
+    title : Krieg vor der Haustür
+    description : 
       
   - types : design development
     image : images/portfolio/map_asia.jpg
     icon : tf-ion-android-search
-    URL : #
-    title : Clock Product
-    description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    URL : https://www.nomos-shop.de/Hansel-Harnisch-Godehardt-Chinesische-Seidenstra%C3%9Feninitiative-amerikanische-Gewichtsverlagerung/productview.aspx?product=30561
+    title : China's Silk Road
+    description : 
     
   - types : photography development
     image : images/portfolio/urban_spaces.jpg
     icon : tf-ion-android-search
-    URL : #
-    title : Urban Spaces
-    description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    URL : https://medium.com/@Fubits/urbane-r%C3%A4ume-proteste-weltpolitik-21f05d512cc4
+    title : Urban Spaces Project
+    description : 
     

@@ -4,24 +4,24 @@ headingSpan : Stack
 stackItem :
   - icon : tf-globe
     title : UX / HCI Methods
-    content : TBD.
+    content : 
     
   - icon : tf-ion-laptop
     title : Data Processing
-    content : TBD.
+    content : 
     
   - icon : tf-genius
     title : GIS & Mapping
-    content : TBD.
+    content : 
     
   - icon : tf-dial
     title : Network Analysis
-    content : TBD.
+    content : 
     
   - icon : tf-target3
     title : Web Development
-    content : TBD.
+    content : 
     
   - icon : tf-lifesaver
     title : Data Visualisation
-    content : TBD.
+    content : 

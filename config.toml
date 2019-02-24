@@ -56,13 +56,13 @@ heading = "Freelance Portfolio"
 content= "Computational Social Science | HCI/UX | Data & Information Visualisation | GIS/Mapping | Open Science | Research Data Management"
 btn = true
 btnText="Explore"
-btnURL="philosophy"
+btnURL="mission"
 
 # call to action
 [params.cta]
 enable = true
 title = "Custom Solutions for Non-Profit Research"
-content = "TBD"
+content = ""
 btnURL = "#"
 btnText = "Contact Me"
 

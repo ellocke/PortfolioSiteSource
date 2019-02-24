@@ -30,12 +30,12 @@
                     <img class="img-fluid" src="{{ .image | absURL}}" alt="work-image">
                     <div class="caption">
 
-                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="{{ .image | absURL}}"
-                            data-lightbox="image-1">
+
+                        <h4>{{ .title }}</h4>
+                        <p>{{ .description }}</p>
+                        <a class="search-icon" target="_blank" href="{{ .URL | absURL }}">
                             <i class="{{ .icon }}"></i>
                         </a>
-                        <h4><a href="{{ .URL | absURL }}">{{ .title }}</a></h4>
-                        <p>{{ .description }}</p>
                     </div>
                 </div>
             </div>
