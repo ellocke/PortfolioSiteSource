@@ -120,7 +120,6 @@ a:hover {
   height: 100%;
   left: 0;
   opacity: 1;
-  filter: alpha(opacity=100);
   position: fixed;
   text-align: center;
   top: 0;
@@ -1013,13 +1012,14 @@ a:hover {
 .portfolio-block:before {
   transition: all 0.3s ease-in-out;
   background: white;
-  opacity: 0;
-  top: 20px;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   position: absolute;
   content: '';
+  opacity: 0.8;
 }
 
 .portfolio-block img {
@@ -1028,7 +1028,7 @@ a:hover {
 }
 
 .portfolio-block:hover:before {
-  opacity: 1;
+  visibility: visible;
 }
 
 .portfolio-block:hover .caption h4 {
@@ -1036,7 +1036,7 @@ a:hover {
 }
 
 .portfolio-block:hover .caption {
-  opacity: 1;
+  visibility: visible;
   top: 55%;
 }
 
@@ -1044,7 +1044,8 @@ a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
+  opacity: 1;
+  visibility: hidden;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 9;
@@ -1053,7 +1054,7 @@ a:hover {
 }
 
 .portfolio-block .caption h4 {
-  font-size: 16px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -1161,7 +1162,6 @@ a:hover {
 .team-member:hover .mask {
   cursor: pointer;
   opacity: 1;
-  filter: alpha(opacity=100);
   -webkit-transform: rotateY(0deg) scale(1, 1);
   transform: rotateY(0deg) scale(1, 1);
 }
@@ -1201,7 +1201,6 @@ a:hover {
   left: 0;
   top: 0;
   opacity: 0;
-  filter: alpha(opacity=0);
   transition: all .5s ease-out 0s;
   -webkit-transform: rotateY(180deg) scale(0.5, 0.5);
   transform: rotateY(180deg) scale(0.5, 0.5);
@@ -1302,7 +1301,6 @@ a:hover {
   margin: 0 4px;
   width: 13px;
   opacity: 1;
-  filter: alpha(opacity=100);
 }
 
 .owl-controls .owl-page.active span,
@@ -1592,7 +1590,6 @@ a:hover {
 .social-icon ul li:hover a i {
   color: #fff;
   opacity: 1;
-  filter: alpha(opacity=100);
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
@@ -1622,7 +1619,6 @@ a:hover {
   line-height: 70px;
   margin: 0;
   opacity: 0.3;
-  filter: alpha(opacity=30);
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
   transition: all 400ms ease-out 0s;
