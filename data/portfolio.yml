@@ -12,38 +12,44 @@ headingSpan : Portfolio
 #    filterTitle : Development
 
 portfolioItem :
-  - types : design
+  - types : design mapping dataviz
     image : images/portfolio/map_syria_main.jpg
     icon : tf-ion-android-search
     URL : https://www.gppi.net/2019/02/17/the-logic-of-chemical-weapons-use-in-syria
     title : Nowhere to Hide
     description : 
     
-  - types : development
+  - types : design mapping dataviz
     image : images/portfolio/map_syria_cases.jpg
     icon : tf-ion-android-search
     URL : https://www.gppi.net/2019/02/17/the-logic-of-chemical-weapons-use-in-syria
     title : Nowhere to Hide
     description : 
 
-  - types : photography development
+  - types : design mapping print
     image : images/portfolio/map_mena.jpg
     icon : tf-ion-android-search
     URL : http://dietz-verlag.de/isbn/9783801205485/Krieg-vor-der-Haustuer-Die-Gewalt-in-Europas-Nachbarschaft-und-was-wir-dagegen-tun-koennen-Sarah-Brockmeier-Philipp-Rotmann
     title : Krieg vor der Haustür
     description : 
       
-  - types : design development
+  - types : design mapping print
     image : images/portfolio/map_asia.jpg
     icon : tf-ion-android-search
     URL : https://www.nomos-shop.de/Hansel-Harnisch-Godehardt-Chinesische-Seidenstra%C3%9Feninitiative-amerikanische-Gewichtsverlagerung/productview.aspx?product=30561
     title : China's Silk Road
     description : 
     
-  - types : photography development
+  - types : webdesign design concept ux webdev
     image : images/portfolio/urban_spaces.jpg
     icon : tf-ion-android-search
     URL : https://medium.com/@Fubits/urbane-r%C3%A4ume-proteste-weltpolitik-21f05d512cc4
     title : Urban Spaces Project
     description : 
     
+  - types : design dataviz webdesign ux print layout concept
+    image : images/portfolio/full_stack_thumb.jpg
+    icon : tf-ion-android-search
+    URL : 
+    title : How can I help you advance your Mission?
+    description : 

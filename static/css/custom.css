@@ -6,6 +6,9 @@
     max-width: 150px!important;
 }
 
+.portfolio-block::before {
+    background-color: #707070!important;
+}
 .caption h4 {
     color: #57cbcc;
 }

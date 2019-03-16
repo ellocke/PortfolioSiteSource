@@ -1,7 +1,7 @@
 baseURL = "https://dadascience.design/portfolio"
 # baseURL = "https://dadascience.design/"
 languageCode = "en-us"
-title = "fubits@git"
+title = "Portfolio"
 
 publishDir = "../ellocke.github.io/portfolio"
 
@@ -42,7 +42,7 @@ home= "fubits@git Portfolio"
 logo = "images/logo.png"
 
 # Meta data
-description = "fubits@git Portfolio"
+description = "Portfolio - fubits@git"
 author = "Ilja / fubits"
 
 custom_css = ["css/custom.css"]
