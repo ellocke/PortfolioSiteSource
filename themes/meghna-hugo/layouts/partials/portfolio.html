@@ -29,9 +29,8 @@
                 <div class="portfolio-block">
                     <img class="img-fluid" src="{{ .image | absURL}}" alt="work-image">
                     <div class="caption">
-
-
                         <h4>{{ .title }}</h4>
+                        <h5>{{ .product }}</h5>
                         <p>{{ .description }}</p>
                         <a class="search-icon" target="_blank" href="{{ .URL | absURL }}">
                             <i class="{{ .icon }}"></i>

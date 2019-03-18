@@ -9,8 +9,34 @@
 .portfolio-block::before {
     background-color: #707070!important;
 }
+
+.caption {
+    left: inherit!important;
+    transform: translate(0,-50%)!important;
+}
 .caption h4 {
     color: #57cbcc;
+}
+
+.caption h4::before {
+    color: #57cbcc;
+    content: "«"
+}
+
+.caption h4::after {
+    color: #57cbcc;
+    content: "»"
+}
+
+.caption h5 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.caption p {
+    color: white;
+    padding: 1em;
+    margin-bottom: 0;
 }
 
 .navbar-brand {
