@@ -3,6 +3,6 @@ heading : My
 headingSpan : Mission
 bgImage : images/backgrounds/bg-2.jpg
 missionItem :
-  - name : fubits / Ilja Sperling
+  - name : Ilja Sperling | fubits
     image : images/about/linkedin.jpg
-    content : My passion is to help non-profits build human-centered design solutions for evidence-based impact.
+    content : I'm passionate about helping non-profits build human-centered design solutions for evidence-based impact.

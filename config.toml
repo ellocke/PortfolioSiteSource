@@ -1,7 +1,7 @@
 baseURL = "https://dadascience.design/portfolio"
 # baseURL = "https://dadascience.design/"
 languageCode = "en-us"
-title = "fubits@git"
+title = "Portfolio - fubits@git"
 
 publishDir = "../ellocke.github.io/portfolio"
 
@@ -29,22 +29,17 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     weight = 3
     
     [[menu.nav]]
-    name = "Talks"
-    URL = "../talks"
-    weight = 4
-    
-    [[menu.nav]]
     name = "About"
     URL = "../about"
-    weight = 5
+    weight = 4
 
 # Site params
 [params]
-home= "fubits@git Portfolio"
+home= "fubits@Portfolio"
 logo = "images/logo.png"
 
 # Meta data
-description = "Portfolio - fubits@git"
+description = "Freelance UX/Design Portfolio Ilja Sperling / fubits"
 author = "Ilja / fubits"
 
 custom_css = ["css/custom.css"]
@@ -53,6 +48,7 @@ custom_css = ["css/custom.css"]
 [params.banner]
 enable = true
 bgImage = "images/backgrounds/john-barkiple-539580-unsplash.jpg"
+# bgImage = "images/backgrounds/dadasciencedesign_font_1335.png"
 icon = "tf-ion-play"
 heading = "Freelance Portfolio"
 content= "Computational Social Science | HCI/UX | Data & Information Visualisation | GIS/Mapping | Open Science | Research Data Management"
@@ -63,10 +59,10 @@ btnURL="mission"
 # call to action
 [params.cta]
 enable = true
-title = "Custom Solutions for Non-Profit Research"
+title = "Custom Design Solutions for Non-Profit Research"
 content = ""
 btnURL = "https://keybase.io/fubits/"
-btnText = "Contact Me"
+btnText = "Reach out"
 
 # counter
 [params.counter]

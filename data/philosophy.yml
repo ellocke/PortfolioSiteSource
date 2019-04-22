@@ -2,14 +2,15 @@ enable : true
 heading : My
 headingSpan : Philosophy
 aboutItem : 
-- icon : tf-strategy
+- icon : tf-layers
   title : Data
-  content : Impact needs Action. Action needs Decisions. Decisions need Evidence and Insights.
+  content : Action needs data – not spreadsheets.<br><br>Jailbreak Excel and focus on your goals. With functional data management and reproducibility.
+
+- icon : tf-magnifying-glass
+  title : Science
+  content : Before turning to Computer Science I finished my B.A. in Politics and Communication Studies. I worked in academic research, PR, and policy. I'm home in both worlds.
 
 - icon : tf-tools
-  title : Science
-  content : Before transitioning to Computer Science I studied Political Science and Communication Studies in Berlin and Leeds. I worked in research, PR, and policy (Think Tanks).
-
-- icon : tf-anchor2
   title : Design
-  content : UX / Data Viz / Info Viz / Web Development / Reserach Data Management / User-centric Workflows
+  content : What if social research had the UX of Data-Driven Journalism?<br><br>Apply human-centered design principles to address the right questions.
+  

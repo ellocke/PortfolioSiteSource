@@ -20,7 +20,7 @@
 					</a>
 					<br>
 
-					<p><a href="{{ .Site.Params.footer.copyrightURL | absURL }}"> {{ with .Site.Params.footer.copyright }} {{ . }} {{ end }} </a> | Built with <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://github.com/rstudio/blogdown" target="_blank">Blogdown</a> • Theme (mod.): <a href="{{ .Site.Params.footer.themeURL | absURL }}" target="_blank"> {{ with .Site.Params.footer.theme }} {{ . }} {{ end }} </a> (<a href="{{ .Site.Params.footer.themeLicenseURL | absURL }}" target="_blank"> {{ with .Site.Params.footer.themeLicense }} {{ . }} {{ end }} </a>)</p>
+					<p><a href="{{ .Site.Params.footer.copyrightURL | absURL }}"> {{ with .Site.Params.footer.copyright }} {{ . }} {{ end }} </a> | Built with <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://github.com/rstudio/blogdown" target="_blank">Blogdown</a> | Theme (mod.): <a href="{{ .Site.Params.footer.themeURL | absURL }}" target="_blank"> {{ with .Site.Params.footer.theme }} {{ . }} {{ end }} </a> (<a href="{{ .Site.Params.footer.themeLicenseURL | absURL }}" target="_blank"> {{ with .Site.Params.footer.themeLicense }} {{ . }} {{ end }} </a>)</p>
 				</div>
 			</div>
 		</div>
@@ -35,8 +35,6 @@
 		{{"<!-- Bootstrap 4.2 + Popper -->" | safeHTML}}
 		{{ $bs := resources.Get "js/bootstrap.bundle.js" | minify}}
 		<script type="text/javascript" src="{{ $bs.Permalink }}"></script>
-		{{"<!-- Number Counter Script -->" | safeHTML}}
-		<script type="text/javascript" src="{{ "plugins/count-to/jquery.countTo.js" | absURL}}"></script>
 		{{"<!-- wow.min Script -->" | safeHTML}}
 		<script type="text/javascript" src="{{ "plugins/wow/dist/wow.min.js" | absURL}}"></script>
 		{{"<!-- Scroll behavior polyfill -->" | safeHTML}}

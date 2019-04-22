@@ -2,26 +2,26 @@ enable : true
 heading : My
 headingSpan : Stack
 stackItem :
-  - icon : tf-globe
-    title : UX / HCI Methods
+  - icon : tf-dial
+    title : HCI Methods | UX
     content : 
     
-  - icon : tf-ion-laptop
+  - icon : tf-linegraph
     title : Data Processing
-    content : 
+    content : # Analysis, Management, Modelling
     
-  - icon : tf-genius
+  - icon : tf-globe
     title : GIS & Mapping
     content : 
     
-  - icon : tf-dial
+  - icon : tf-genius
     title : Network Analysis
     content : 
     
-  - icon : tf-target3
+  - icon : tf-lifesaver
     title : Web Development
     content : 
     
-  - icon : tf-lifesaver
+  - icon : tf-target3
     title : Data Visualisation
     content : 

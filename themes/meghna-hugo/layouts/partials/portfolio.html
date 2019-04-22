@@ -26,7 +26,7 @@
             {{"<!-- portfolio item -->" | safeHTML}}
             {{ range .Site.Data.portfolio.portfolioItem }}
             <div class="mix col-lg-6 {{ .types }}">
-                <div class="portfolio-block">
+                <div class="{{ if not (.static) }} portfolio-block {{ end }}">
                     <img class="img-fluid" src="{{ .image | absURL}}" alt="work-image">
                     <div class="caption">
                         {{with .title }}<h4>{{.}}</h4>{{end}}

@@ -20,7 +20,7 @@
                         <i class="{{ .icon }}"></i>
                     </div>
                     <h3>{{ .title }}</h3>
-                    <p>{{ .content }}</p>
+                    <p>{{ .content | safeHTML }}</p>
                 </div>
             </article>
             {{"<!-- End Single Stack Item -->" | safeHTML }}
