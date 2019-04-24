@@ -1,0 +1,3 @@
+[submodule "themes/meghna-hugo-fork"]
+	path = themes/meghna-hugo-fork
+	url = https://github.com/ellocke/meghna-hugo

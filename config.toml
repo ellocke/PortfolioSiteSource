@@ -5,7 +5,8 @@ title = "Portfolio - fubits@git"
 
 publishDir = "../ellocke.github.io/portfolio"
 
-theme = "meghna-hugo"
+# theme = "meghna-hugo"
+theme = "meghna-hugo-fork"
 
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
@@ -59,7 +60,7 @@ btnURL="mission"
 # call to action
 [params.cta]
 enable = true
-title = "Custom Design Solutions for Non-Profit Research"
+title = "Custom Design Solutions for Not-for-Profit Action"
 content = ""
 btnURL = "https://keybase.io/fubits/"
 btnText = "Reach out"
