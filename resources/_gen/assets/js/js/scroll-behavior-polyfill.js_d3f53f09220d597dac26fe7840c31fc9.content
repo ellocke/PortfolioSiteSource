@@ -1,5 +1,5 @@
 /*!
-scroll-behavior-polyfill 2.0.6
+scroll-behavior-polyfill 2.0.4
 license: MIT (https://github.com/wessberg/scroll-behavior-polyfill/blob/master/LICENSE.md)
 Copyright © 2019 Frederik Wessberg <frederikwessberg@hotmail.com>
 */(function(){'use strict';var SUPPORTS_SCROLL_BEHAVIOR="scrollBehavior"in document.documentElement.style;/*! *****************************************************************************
@@ -26,7 +26,7 @@ if(value==null){var styleAttributeValue=target.getAttribute("style");if(styleAtt
 if(value==null){var computedStyle=getComputedStyle(target);var computedStyleValue=computedStyle.getPropertyValue("scrollBehavior");if(computedStyleValue!=null&&computedStyleValue!==""){value=computedStyleValue;}}
 return value;}
 var HALF=0.5;function ease(k){return HALF*(1-Math.cos(Math.PI*k));}
-var SCROLL_TIME=15000;function smoothScroll(options){var startTime=options.startTime,startX=options.startX,startY=options.startY,endX=options.endX,endY=options.endY,method=options.method;var timeLapsed=0;var distanceX=endX-startX;var distanceY=endY-startY;var speed=Math.max(Math.abs((distanceX/1000)*SCROLL_TIME),Math.abs((distanceY/1000)*SCROLL_TIME));requestAnimationFrame(function animate(timestamp){timeLapsed+=timestamp-startTime;var percentage=Math.max(0,Math.min(1,speed===0?0:timeLapsed/speed));var positionX=Math.floor(startX+distanceX*ease(percentage));var positionY=Math.floor(startY+distanceY*ease(percentage));method(positionX,positionY);if(positionX!==endX||positionY!==endY){requestAnimationFrame(animate);}});}
+var SCROLL_TIME=15000;function smoothScroll(options){var startTime=options.startTime,startX=options.startX,startY=options.startY,endX=options.endX,endY=options.endY,method=options.method;var timeLapsed=0;var distanceX=endX-startX;var distanceY=endY-startY;var speed=Math.max(Math.abs(distanceX/1000*SCROLL_TIME),Math.abs(distanceY/1000*SCROLL_TIME));requestAnimationFrame(function animate(timestamp){timeLapsed+=timestamp-startTime;var percentage=Math.max(0,Math.min(1,speed===0?0:(timeLapsed/speed)));var positionX=Math.floor(startX+(distanceX*ease(percentage)));var positionY=Math.floor(startY+(distanceY*ease(percentage)));method(positionX,positionY);if(positionX!==endX||positionY!==endY){requestAnimationFrame(animate);}});}
 function now(){if("performance"in window)
 return performance.now();return Date.now();}
 var ELEMENT_ORIGINAL_SCROLL=Element.prototype.scroll;var WINDOW_ORIGINAL_SCROLL=window.scroll;var ELEMENT_ORIGINAL_SCROLL_BY=Element.prototype.scrollBy;var WINDOW_ORIGINAL_SCROLL_BY=window.scrollBy;var ELEMENT_ORIGINAL_SCROLL_TO=Element.prototype.scrollTo;var WINDOW_ORIGINAL_SCROLL_TO=window.scrollTo;function elementPrototypeScrollFallback(x,y){this.__adjustingScrollPosition=true;this.scrollLeft=x;this.scrollTop=y;delete this.__adjustingScrollPosition;}
@@ -62,32 +62,38 @@ function patchWindowScroll(){window.scroll=function(optionsOrX,y){handleScrollMe
 function patchWindowScrollBy(){window.scrollBy=function(optionsOrX,y){handleScrollMethod(this,"scrollBy",optionsOrX,y);};}
 function patchWindowScrollTo(){window.scrollTo=function(optionsOrX,y){handleScrollMethod(this,"scrollTo",optionsOrX,y);};}
 function getParent(currentElement){if("nodeType"in currentElement&&currentElement.nodeType===1){return currentElement.parentNode;}
-if("ShadowRoot"in window&&currentElement instanceof window.ShadowRoot){return currentElement.host;}
+if("ShadowRoot"in window&&(currentElement instanceof window.ShadowRoot)){return currentElement.host;}
 else if(currentElement===document){return window;}
 else if(currentElement instanceof Node)
 return currentElement.parentNode;return null;}
 var scrollingElement=document.scrollingElement!=null?document.scrollingElement:document.documentElement;function canOverflow(overflow){return overflow!=="visible"&&overflow!=="clip";}
-function isScrollable(element){if(element.clientHeight<element.scrollHeight||element.clientWidth<element.scrollWidth){var style=getComputedStyle(element,null);return canOverflow(style.overflowY)||canOverflow(style.overflowX);}
+function isScrollable(element){if(element.clientHeight<element.scrollHeight||element.clientWidth<element.scrollWidth){var style=getComputedStyle(element,null);return(canOverflow(style.overflowY)||canOverflow(style.overflowX));}
 return false;}
 function findNearestAncestorsWithScrollBehavior(target){var currentElement=target;while(currentElement!=null){var behavior=getScrollBehavior(currentElement);if(behavior!=null&&(currentElement===scrollingElement||isScrollable(currentElement))){return[currentElement,behavior];}
 var parent_1=getParent(currentElement);currentElement=parent_1;}
 currentElement=target;while(currentElement!=null){if(currentElement===scrollingElement||isScrollable(currentElement)){return[currentElement,"auto"];}
 var parent_2=getParent(currentElement);currentElement=parent_2;}
 return[scrollingElement,"auto"];}
-function findNearestRoot(target){var currentElement=target;while(currentElement!=null){if("ShadowRoot"in window&&currentElement instanceof window.ShadowRoot){return currentElement;}
+function findNearestRoot(target){var currentElement=target;while(currentElement!=null){if("ShadowRoot"in window&&(currentElement instanceof window.ShadowRoot)){return currentElement;}
 var parent_1=getParent(currentElement);if(parent_1===currentElement){return document;}
 currentElement=parent_1;}
 return document;}
 var ID_WITH_LEADING_DIGIT_REGEXP=/^#\d/;function catchNavigation(){window.addEventListener("click",function(e){if(!e.isTrusted||!(e.target instanceof HTMLAnchorElement))
-return;var hrefAttributeValue=e.target.getAttribute("href");if(hrefAttributeValue==null||!hrefAttributeValue.startsWith("#")){return;}
-var root=findNearestRoot(e.target);var elementMatch=hrefAttributeValue.match(ID_WITH_LEADING_DIGIT_REGEXP)!=null?root.getElementById(hrefAttributeValue.slice(1)):root.querySelector(hrefAttributeValue);if(elementMatch==null)
+return;var hrefAttributeValue=e.target.getAttribute("href");if(hrefAttributeValue==null||!hrefAttributeValue.startsWith("#"))
+return;var root=findNearestRoot(e.target);var elementMatch=hrefAttributeValue.match(ID_WITH_LEADING_DIGIT_REGEXP)!=null?root.getElementById(hrefAttributeValue.slice(1)):root.querySelector(hrefAttributeValue);if(elementMatch==null)
 return;var _a=__read(findNearestAncestorsWithScrollBehavior(elementMatch),2),ancestorWithScrollBehavior=_a[0],behavior=_a[1];if(behavior!=="smooth")
 return;e.preventDefault();ancestorWithScrollBehavior.scrollTo({behavior:behavior,top:elementMatch.offsetTop,left:elementMatch.offsetLeft});});}
 var ELEMENT_ORIGINAL_SCROLL_INTO_VIEW=Element.prototype.scrollIntoView;function alignNearest(scrollingEdgeStart,scrollingEdgeEnd,scrollingSize,scrollingBorderStart,scrollingBorderEnd,elementEdgeStart,elementEdgeEnd,elementSize){if((elementEdgeStart<scrollingEdgeStart&&elementEdgeEnd>scrollingEdgeEnd)||(elementEdgeStart>scrollingEdgeStart&&elementEdgeEnd<scrollingEdgeEnd)){return 0;}
 if((elementEdgeStart<=scrollingEdgeStart&&elementSize<=scrollingSize)||(elementEdgeEnd>=scrollingEdgeEnd&&elementSize>=scrollingSize)){return elementEdgeStart-scrollingEdgeStart-scrollingBorderStart;}
 if((elementEdgeEnd>scrollingEdgeEnd&&elementSize<scrollingSize)||(elementEdgeStart<scrollingEdgeStart&&elementSize>scrollingSize)){return elementEdgeEnd-scrollingEdgeEnd+scrollingBorderEnd;}
 return 0;}
-function computeScrollIntoView(target,scroller,options){var block=options.block,inline=options.inline;var scrollingElement=document.scrollingElement||document.documentElement;var viewportWidth=window.visualViewport!=null?visualViewport.width:innerWidth;var viewportHeight=window.visualViewport!=null?visualViewport.height:innerHeight;var viewportX=window.scrollX!=null?window.scrollX:window.pageXOffset;var viewportY=window.scrollY!=null?window.scrollY:window.pageYOffset;var _a=target.getBoundingClientRect(),targetHeight=_a.height,targetWidth=_a.width,targetTop=_a.top,targetRight=_a.right,targetBottom=_a.bottom,targetLeft=_a.left;var targetBlock=block==="start"||block==="nearest"?targetTop:block==="end"?targetBottom:targetTop+targetHeight/2;var targetInline=inline==="center"?targetLeft+targetWidth/2:inline==="end"?targetRight:targetLeft;var _b=scroller.getBoundingClientRect(),height=_b.height,width=_b.width,top=_b.top,right=_b.right,bottom=_b.bottom,left=_b.left;var frameStyle=getComputedStyle(scroller);var borderLeft=parseInt(frameStyle.borderLeftWidth,10);var borderTop=parseInt(frameStyle.borderTopWidth,10);var borderRight=parseInt(frameStyle.borderRightWidth,10);var borderBottom=parseInt(frameStyle.borderBottomWidth,10);var blockScroll=0;var inlineScroll=0;var scrollbarWidth="offsetWidth"in scroller?scroller.offsetWidth-scroller.clientWidth-borderLeft-borderRight:0;var scrollbarHeight="offsetHeight"in scroller?scroller.offsetHeight-scroller.clientHeight-borderTop-borderBottom:0;if(scrollingElement===scroller){if(block==="start"){blockScroll=targetBlock;}
+function computeScrollIntoView(target,scroller,options){var block=options.block,inline=options.inline;var scrollingElement=document.scrollingElement||document.documentElement;var viewportWidth=window.visualViewport!=null?visualViewport.width:innerWidth;var viewportHeight=window.visualViewport!=null?visualViewport.height:innerHeight;var viewportX=window.scrollX!=null?window.scrollX:window.pageXOffset;var viewportY=window.scrollY!=null?window.scrollY:window.pageYOffset;var _a=target.getBoundingClientRect(),targetHeight=_a.height,targetWidth=_a.width,targetTop=_a.top,targetRight=_a.right,targetBottom=_a.bottom,targetLeft=_a.left;var targetBlock=block==="start"||block==="nearest"?targetTop:block==="end"?targetBottom:targetTop+targetHeight/2;var targetInline=inline==="center"?targetLeft+targetWidth/2:inline==="end"?targetRight:targetLeft;var _b=scroller.getBoundingClientRect(),height=_b.height,width=_b.width,top=_b.top,right=_b.right,bottom=_b.bottom,left=_b.left;var frameStyle=getComputedStyle(scroller);var borderLeft=parseInt(frameStyle.borderLeftWidth,10);var borderTop=parseInt(frameStyle.borderTopWidth,10);var borderRight=parseInt(frameStyle.borderRightWidth,10);var borderBottom=parseInt(frameStyle.borderBottomWidth,10);var blockScroll=0;var inlineScroll=0;var scrollbarWidth="offsetWidth"in scroller?scroller.offsetWidth-
+scroller.clientWidth-
+borderLeft-
+borderRight:0;var scrollbarHeight="offsetHeight"in scroller?scroller.offsetHeight-
+scroller.clientHeight-
+borderTop-
+borderBottom:0;if(scrollingElement===scroller){if(block==="start"){blockScroll=targetBlock;}
 else if(block==="end"){blockScroll=targetBlock-viewportHeight;}
 else if(block==="nearest"){blockScroll=alignNearest(viewportY,viewportY+viewportHeight,viewportHeight,borderTop,borderBottom,viewportY+targetBlock,viewportY+targetBlock+targetHeight,targetHeight);}
 else{blockScroll=targetBlock-viewportHeight/2;}
