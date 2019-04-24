@@ -59,7 +59,7 @@ btnURL="mission"
 # call to action
 [params.cta]
 enable = true
-title = "Custom Design Solutions for Non-Profit Research"
+title = "Custom Design Solutions for Not-for-Profit Action"
 content = ""
 btnURL = "https://keybase.io/fubits/"
 btnText = "Reach out"
