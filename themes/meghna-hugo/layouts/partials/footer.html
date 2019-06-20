@@ -31,12 +31,12 @@
 {{"<!-- Essential Scripts -->" | safeHTML}}
 
 		{{"<!-- Main jQuery -->" | safeHTML}}
-		<script type="text/javascript" src="{{ "plugins/jquery/dist/jquery.min.js" | absURL}}"></script>
+		<script src="{{ "plugins/jquery/dist/jquery.min.js" | absURL}}"></script>
 		{{"<!-- Bootstrap 4.2 + Popper -->" | safeHTML}}
 		{{ $bs := resources.Get "js/bootstrap.bundle.js" | minify}}
-		<script type="text/javascript" src="{{ $bs.Permalink }}"></script>
+		<script src="{{ $bs.Permalink }}"></script>
 		{{"<!-- wow.min Script -->" | safeHTML}}
-		<script type="text/javascript" src="{{ "plugins/wow/dist/wow.min.js" | absURL}}"></script>
+		<script src="{{ "plugins/wow/dist/wow.min.js" | absURL}}"></script>
 		{{"<!-- Scroll behavior polyfill -->" | safeHTML}}
 		{{ $scroll := resources.Get "js/scroll-behavior-polyfill.js" | minify}}
 		<script src="{{ $scroll.Permalink }}"></script>

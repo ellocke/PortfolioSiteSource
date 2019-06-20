@@ -16,7 +16,7 @@
         <div class="row portfolio-items-wrapper">
             {{"<!-- portfolio item -->" | safeHTML}}
             {{ range .Site.Data.portfolio.portfolioItem }}
-            <div class="mix {{ if not (.static) }} portfolio-item {{ end }} col-md-6">
+            <div class="mix {{ if not (.static) }} portfolio-item {{ end }} col-md-6" onclick="void(0)">
                     <img class="img-fluid" src="{{ .image | absURL}}" alt="work-image">
                     <div class="caption">
                         {{with .title }}<h4>{{.}}</h4>{{end}}

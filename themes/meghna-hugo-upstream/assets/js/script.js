@@ -51,3 +51,11 @@ $(window).on('scroll', function () {
 		wow.init();
 	}
 })
+
+// $('portfolio-item').on("touchstart", function (e) {
+// 	'use strict'; //satisfy code inspectors
+//         $(this).trigger('hover');
+//     }).on('touchend', function () {
+//         $(this).trigger('hover');
+// });
+
