@@ -5,7 +5,7 @@ title = "Portfolio - fubits@git"
 
 publishDir = "../ellocke.github.io/portfolio"
 
-theme = "meghna-hugo"
+theme = "meghna-hugo-upstream"
 
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 

@@ -1,0 +1,40 @@
+{{ if .Site.Data.mission.enable }}
+{{"<!-- Start Testimonial -->" | safeHTML}}
+<section id="mission" class="testimonial overly section bg-2" style='background-image: url("{{ .Site.Data.mission.bgImage | absURL }}")'>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12  wow fadeInUp" data-wow-duration="250ms" data-wow-delay="100ms">
+                    <div class="title text-center">
+                            <h2>{{ .Site.Data.mission.heading}} <span class="color">{{ .Site.Data.mission.headingSpan}}</span> </h2>
+                            <div class="border-meghna"></div>
+                        </div>
+                {{"<!-- testimonial wrapper -->" | safeHTML}}
+                <div id="testimonials">
+                    {{ range .Site.Data.mission.missionItem }}
+                    {{"<!-- testimonial single -->" | safeHTML}}
+                    <div class="item text-center">
+
+                        {{"<!-- client photo -->" | safeHTML}}
+                        <div class="client-thumb">
+                            <img src="{{ .image | absURL }}" class="img-fluid" alt="Meghna">
+                        </div>
+
+                        {{"<!-- client info -->" | safeHTML}}
+                        <div class="client-info">
+                            <div class="client-meta">
+                                <h3>{{ .name }}</h3>
+                                <span>{{ .date }}</span>
+                            </div>
+                            <div class="client-comment">
+                                <p>{{ .content }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {{"<!-- /testimonial single -->" | safeHTML}}
+                    {{ end }}
+                    </div>
+                </div>
+            </div>
+</section>
+{{"<!-- /testimonial -->" | safeHTML}}
+{{ end }}

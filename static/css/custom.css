@@ -1,5 +1,5 @@
 body {
-    min-width: 300px;
+    min-width: 333px;
 }
 
 .tf-ion-key {
@@ -10,39 +10,114 @@ body {
     max-width: 150px!important;
 }
 
-.portfolio-block::before {
-    background-color: #707070!important;
-}
+/* MOD Portfolio BEGINN */
+/*=================================================================
+  Portfolio section
+==================================================================*/
 
-.caption {
-    left: inherit!important;
-    transform: translate(0,-50%)!important;
-}
-.caption h4 {
-    color: #57cbcc;
-}
-
-.caption h4::before {
-    color: #57cbcc;
-    content: "«"
-}
-
-.caption h4::after {
-    color: #57cbcc;
-    content: "»"
-}
-
-.caption h5 {
-    color: #ffffff;
+  .portfolio-items-wrapper .mix {
+    padding: 5px;
+  }
+  
+  .portfolio-item {
+    position: relative;
+  }
+  
+  .portfolio-item:before {
+    transition: all 0.2s ease-in-out;
+    background: #353b43;;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    content: '';
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .portfolio-item:hover:before {
+    opacity: 0.8;
+  }
+  
+  .portfolio-item:hover .caption h4 {
+    top: 45%;
+  }
+  
+  .portfolio-item:hover .caption {
+    opacity: 1;
+    top: 55%;
+  }
+  
+  .portfolio-item .caption {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    opacity: 0;
+    -webkit-transform: translate(-5%, -50%);
+    transform: translate(-5%, -50%);
+    z-index: 9;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+  }
+  
+  .portfolio-item .caption h4 {
+    color: #FC7233;
+    font-size: 1.5rem;
     font-weight: 700;
-}
-
-.caption p {
+  }
+  
+  .portfolio-item .caption p {
     color: white;
     padding: 1em;
     margin-bottom: 0;
 }
 
+  .portfolio-item .caption h4 a {
+    color: #555;
+  }
+  
+  .portfolio-item .caption .search-icon {
+    background: #FC7233;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 30px;
+  }
+  
+  .portfolio-item .caption .search-icon i {
+    line-height: 50px;
+  }
+
+.portfolio-item .caption h4::before {
+    color: #FC7233;
+    content: "«"
+}
+
+.portfolio-item .caption h4::after {
+    color: #FC7233;
+    content: "»"
+}
+
+
+.portfolio-item .caption h5 {
+    color: #FC7233;
+    font-weight: 700;
+}
+
 .navbar-brand {
     font-family: quattrocento sans, sans-serif;
 }
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }

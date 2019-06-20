@@ -11,7 +11,7 @@
                 </div>
             </div>
             {{"<!-- /section title -->" | safeHTML}}
-
+        <div class="row row-eq-height">
             {{ range .Site.Data.philosophy.aboutItem }}
             {{"<!-- About item -->" | safeHTML}}
             <div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
@@ -27,6 +27,7 @@
                 </div>
             </div>
             {{ end }}
+        </div>
         </div>
     </div>
 </section>

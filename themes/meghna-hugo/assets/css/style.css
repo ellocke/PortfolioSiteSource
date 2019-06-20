@@ -47,12 +47,12 @@ p {
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
-  background: #57cbcc;
+  background: #c05b4d;
 }
 
 ::selection {
   color: #fff;
-  background: #57cbcc;
+  background: #c05b4d;
 }
 
 figure {
@@ -110,7 +110,7 @@ a:hover {
 
 .btn-transparent:hover,
 .btn-transparent:focus {
-  background-color: #57cbcc;
+  background-color: #c05b4d;
   border: 1px solid transparent;
   color: #fff;
 }
@@ -152,7 +152,7 @@ a:hover {
   position: absolute;
   top: -4px;
   width: 50px;
-  background-color: #57cbcc;
+  background-color: #c05b4d;
 }
 
 .color {
@@ -222,11 +222,11 @@ a:hover {
 
 a:focus,
 a:hover {
-  color: #57cbcc;
+  color: #c05b4d;
 }
 
 .btn-main {
-  background: #57cbcc;
+  background: #c05b4d;
   color: #fff;
   display: inline-block;
   font-size: 14px;
@@ -311,7 +311,7 @@ a:hover {
 .sk-cube-grid .sk-cube {
   width: 33%;
   height: 33%;
-  background-color: #57cbcc;
+  background-color: #c05b4d;
   float: left;
   -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
   animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
@@ -404,7 +404,7 @@ a:hover {
 }
 
 .title h2 span {
-  color: #57cbcc;
+  color: #c05b4d;
 }
 
 .title p {
@@ -449,11 +449,7 @@ a:hover {
 }
 
 .header-bradcrumb a:hover {
-  color: #57cbcc;
-}
-
-.slick-slide {
-  outline: none;
+  color: #c05b4d;
 }
 
 /* CSS mfp-with-zoom class */
@@ -514,7 +510,7 @@ a:hover {
 }
 
 .navigation .navigation-menu li a.active {
-  color: #57cbcc;
+  color: #c05b4d;
 }
 
 .navigation .navigation-menu li a {
@@ -525,7 +521,7 @@ a:hover {
 .navigation .navigation-menu li a:hover,
 .navigation .navigation-menu li a:focus {
   background: transparent;
-  color: #57cbcc;
+  color: #c05b4d;
 }
 
 .navigation .navbar-toggler {
@@ -548,7 +544,7 @@ a:hover {
 }
 
 .navbar-toggler:focus {
-  outline-color:  #57cbcc;
+  outline-color:  #c05b4d;
 }
 
 .bg-1 {
@@ -588,7 +584,7 @@ a:hover {
 
 .hero-area .block .video-button {
   background: #fff;
-  color: #57cbcc;
+  color: #c05b4d;
   display: inline-block;
   height: 60px;
   width: 60px;
@@ -683,7 +679,7 @@ a:hover {
 }
 
 .about .block:hover {
-  border-bottom: 2px solid #57cbcc;
+  border-bottom: 2px solid #c05b4d;
 }
 
 .about .block:hover .icon-box {
@@ -755,7 +751,7 @@ a:hover {
 
 .about-2 .content-block .media i {
   font-size: 30px;
-  color: #57cbcc;
+  color: #c05b4d;
 }
 
 .about-2 .content-block .media h4 {
@@ -838,7 +834,7 @@ a:hover {
 .form-meghna input:hover,
 .form-meghna textarea:hover,
 #contact-submit:hover {
-  border-color: #57cbcc;
+  border-color: #c05b4d;
 }
 
 .form-meghna ::placeholder
@@ -848,7 +844,7 @@ a:hover {
 
 #contact-submit {
   border: 1px solid rgba(236, 239, 241, 0.07);
-  background: #57cbcc;
+  background: #c05b4d;
   padding: 12px 0;
   width: 100%;
   margin: 0;
@@ -936,7 +932,7 @@ a:hover {
 }
 
 .price-title h3 {
-  color: #57cbcc;
+  color: #c05b4d;
   margin: 0 0 10px;
   text-transform: uppercase;
 }
@@ -947,7 +943,7 @@ a:hover {
 }
 
 .price-title .value {
-  color: #57cbcc;
+  color: #c05b4d;
   font-size: 30px;
 }
 
@@ -997,8 +993,8 @@ a:hover {
 }
 
 .portfolio-filter button.mixitup-control-active {
-  border: 1px solid #57cbcc;
-  color: #57cbcc;
+  border: 1px solid #c05b4d;
+  color: #c05b4d;
 }
 
 .portfolio-items-wrapper .mix {
@@ -1063,7 +1059,7 @@ a:hover {
 }
 
 .portfolio-block .caption .search-icon {
-  background: #57cbcc;
+  background: #c05b4d;
   width: 50px;
   height: 50px;
   color: #fff;
@@ -1109,13 +1105,13 @@ a:hover {
 
 .service-2 .service-item:hover i {
   background: #fff;
-  color: #57cbcc;
+  color: #c05b4d;
 }
 
 .service-2 .service-item i {
   font-size: 30px;
   display: inline-block;
-  background: #57cbcc none repeat scroll 0 0;
+  background: #c05b4d none repeat scroll 0 0;
   border-radius: 30px;
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
   color: #fff;
@@ -1148,7 +1144,7 @@ a:hover {
 }
 
 .skill-bar .progress .progress-bar {
-  background: #57cbcc;
+  background: #c05b4d;
 }
 
 /*=================================================================
@@ -1225,7 +1221,7 @@ a:hover {
 
 .member-photo .mask ul li a:hover {
   background-color: #fff;
-  color: #57cbcc;
+  color: #c05b4d;
   border: 1px solid transparent;
 }
 
@@ -1305,7 +1301,7 @@ a:hover {
 
 .owl-controls .owl-page.active span,
 .owl-controls .owl-page:hover span {
-  background-color: #57cbcc;
+  background-color: #c05b4d;
   border: 2px solid transparent;
 }
 
@@ -1399,7 +1395,7 @@ a:hover {
 }
 
 .post-meta a {
-  color: #57cbcc;
+  color: #c05b4d;
 }
 
 .post-meta>span {
@@ -1460,7 +1456,7 @@ a:hover {
 }
 
 .next-prev a:hover {
-  color: #57cbcc;
+  color: #c05b4d;
 }
 
 .next-prev .prev-post i {
@@ -1483,7 +1479,7 @@ a:hover {
 }
 
 .social-profile ul li a i:hover {
-  color: #57cbcc;
+  color: #c05b4d;
 }
 
 .comments-section {
@@ -1531,7 +1527,7 @@ a:hover {
 }
 
 .comment-wrap .media .media-heading a {
-  color: #57cbcc;
+  color: #c05b4d;
   font-size: 13px;
 }
 
@@ -1558,7 +1554,7 @@ a:hover {
 .comment-reply-form input:focus,
 .comment-reply-form textarea:focus {
   box-shadow: none;
-  border: 1px solid #57cbcc;
+  border: 1px solid #c05b4d;
 }
 
 .comment-reply-form textarea,
@@ -1582,7 +1578,7 @@ a:hover {
 }
 
 .social-icon ul li:hover a {
-  background-color: #57cbcc;
+  background-color: #c05b4d;
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
@@ -1656,8 +1652,8 @@ a:hover {
 }
 
 #scrollUp:hover {
-  background-color: #57cbcc;
-  border: 1px solid #57cbcc;
+  background-color: #c05b4d;
+  border: 1px solid #c05b4d;
 }
 
 /*=================================================================
@@ -2088,7 +2084,7 @@ blockquote {
 
 .form-control-meghna .form-control:focus
 {
-  border-color: #57cbcc;
+  border-color: #c05b4d;
   box-shadow: 0 0 0 0.2rem rgba(0, 174, 255, 0.432);
 }
 
