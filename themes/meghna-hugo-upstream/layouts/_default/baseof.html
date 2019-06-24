@@ -2,9 +2,7 @@
 <html class="no-js" lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}" scroll-behavior="smooth">
     {{- partial "head.html" . -}}
     <body id="body" data-spy="scroll" data-target=".navbar" data-offset="52">
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
+        <div id="content">{{- block "main" . }}{{- end }}</div>
         {{- partial "footer.html" . -}}
         {{- partial "scripts.html" . -}}
     </body>
