@@ -1956,6 +1956,9 @@
 .tf-ion-social-github:before {
   content: "\f233";
 }
+.tf-ion-social-key:before {
+  content: "\f296";
+}
 .tf-ion-social-google-outline:before {
   content: "\f34e";
 }

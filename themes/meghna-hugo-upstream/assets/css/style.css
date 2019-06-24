@@ -1697,6 +1697,8 @@ input#e-mail, #hidden_iframe {
 
 @media (max-width: 768px) {
   .social-icon ul li a {
+    background-color: #c05b4d;
+    color: white;
     width: 55px;
     height: 55px;
   }

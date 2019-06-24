@@ -87,7 +87,7 @@ icon = "tf-ion-social-twitter"
 url = "https://twitter.com/fubits"
 
 [[params.footer.socialIcon]]
-icon = "tf-ion-key"
+icon = "tf-ion-social-key"
 url = "https://keybase.io/fubits/"
 
 [[params.footer.socialIcon]]

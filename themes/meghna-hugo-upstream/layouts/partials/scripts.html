@@ -1,0 +1,18 @@
+{{"<!-- Essential Scripts -->" | safeHTML}}
+
+		{{"<!-- Main jQuery -->" | safeHTML}}
+		<script src="{{ "plugins/jquery/dist/jquery.min.js" | absURL}}"></script>
+		{{"<!-- Bootstrap 4.3 + Popper -->" | safeHTML}}
+		<script src="{{ "plugins/bootstrap/dist/js/bootstrap.bundle.min.js" | absURL}}"></script>
+
+		
+		{{"<!-- wow.min Script -->" | safeHTML}}
+		<script src="{{ "plugins/wow/dist/wow.min.js" | absURL}}"></script>
+		{{"<!-- Scroll behavior polyfill -->" | safeHTML}}
+		{{ $scroll := resources.Get "js/scroll-behavior-polyfill.js" | minify}}
+		<script src="{{ $scroll.Permalink }}"></script>
+
+		{{"<!-- Custom js -->" | safeHTML}}
+		{{ $script := resources.Get "js/script.js" | minify}}
+		<script src="{{ $script.Permalink }}"></script>
+
