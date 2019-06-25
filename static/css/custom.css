@@ -21,7 +21,7 @@ body {
   }
 
   .hero-area .block h1 {
-    font-size: 6rem;
+    font-size: 4em;
   }
 
   .hero-area .block p {
@@ -30,9 +30,22 @@ body {
     color: white;
   }
 
+  .hero-area .block .btn-transparent {
+    border-color: white;
+    color: #fc7233;
+    
+  }
 
-
+  .hero-area .block .btn-transparent:hover,
+  .hero-area .block .btn-transparent:active {
+    border-color: white;
+    color: white;
+  }
   @media (min-width: 768px) {
+
+      .hero-area .block h1 {
+        font-size: 6em;
+      }
 
       .hero-area .block p {
         font-size: 1.4em;
