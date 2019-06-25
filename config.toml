@@ -1,7 +1,7 @@
 baseURL = "https://dadascience.design/portfolio"
 # baseURL = "https://dadascience.design/"
 languageCode = "en-us"
-title = "Portfolio - fubits@git"
+title = "fubits@Portfolio"
 
 publishDir = "../ellocke.github.io/portfolio"
 
@@ -50,7 +50,7 @@ enable = true
 bgImage = "images/backgrounds/fubits_isometric.jpg"
 icon = "tf-ion-play"
 heading = "Freelance Portfolio"
-content= "Computational Social Science | HCI/UX | Data & Information Visualisation | GIS/Mapping | Open Science | Research Data Management"
+content= "Computational Social Science | HCI/UX | Data&nbsp;&&nbsp;Information Visualisation | GIS/Mapping | Open Science | Research Data Management"
 btn = true
 btnText="EXPLORE"
 btnURL="mission"

@@ -1,9 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     min-width: 333px;
 }
 
-.tf-ion-social-key {
-    transform: rotate(270deg)!important;
+.social-icon ul li a .tf-ion-social-key {
+    transform: rotate(90deg)!important;
 }
 
 .client-thumb .img-fluid {
@@ -15,13 +19,9 @@ body {
   Portfolio section
 ==================================================================*/
 
-  .hero-area {
-    /* text-shadow: 2px 2px 4px #000000; */
-    
-  }
-
   .hero-area .block h1 {
     font-size: 4em;
+    text-shadow: 2px 2px 4px #000000;
   }
 
   .hero-area .block p {
@@ -139,23 +139,23 @@ body {
     margin-bottom: 0;
 }
 
-  .portfolio-item .caption h4 a {
-    color: #555;
-  }
-  
-  .portfolio-item .caption .search-icon {
-    background: #FC7233;
-    width: 50px;
-    height: 50px;
-    color: #fff;
-    display: inline-block;
-    font-size: 20px;
-    border-radius: 30px;
-  }
-  
-  .portfolio-item .caption .search-icon i {
-    line-height: 50px;
-  }
+.portfolio-item .caption h4 a {
+  color: #555;
+}
+
+.portfolio-item .caption .search-icon {
+  background: #FC7233;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+.portfolio-item .caption .search-icon i {
+  line-height: 50px;
+}
 
 .portfolio-item .caption h4::before {
     color: #FC7233;
@@ -176,10 +176,3 @@ body {
 .navbar-brand {
     font-family: quattrocento sans, sans-serif;
 }
-
-.row-eq-height {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
