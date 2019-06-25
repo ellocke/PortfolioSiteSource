@@ -6,7 +6,7 @@ body {
     min-width: 333px;
 }
 
-.social-icon ul li a .tf-ion-social-key {
+.contact-icons ul li a .tf-ion-social-key {
     transform: rotate(90deg)!important;
 }
 

@@ -1698,29 +1698,29 @@ input#e-mail, #hidden_iframe {
 /*=================================================================
   Footer section
 ==================================================================*/
-.social-icon {
+.contact-icons {
   padding: 60px 0 35px;
 }
 
-.social-icon ul {
+.contact-icons ul {
   text-align: center;
 }
 
-.social-icon ul li {
+.contact-icons ul li {
   margin-bottom: 4px;
 }
 
-.social-icon ul li:hover a {
+.contact-icons ul li:hover a {
   background-color: #FC7233;
 }
 
-.social-icon ul li:hover a i {
+.contact-icons ul li:hover a i {
   color: #fff;
   opacity: 1;
   /* filter: alpha(opacity=100); */
 }
 
-.social-icon ul li a {
+.contact-icons ul li a {
   background-color: #26292e;
   border: 1px solid transparent;
   display: block;
@@ -1729,7 +1729,7 @@ input#e-mail, #hidden_iframe {
 }
 
 @media (max-width: 768px) {
-  .social-icon ul li a {
+  .contact-icons ul li a {
     background-color: #c05b4d;
     color: white;
     width: 55px;
@@ -1737,7 +1737,7 @@ input#e-mail, #hidden_iframe {
   }
 }
 
-.social-icon ul li a i {
+.contact-icons ul li a i {
   /* color: #55606a; */
   display: inline-block;
   font-size: 32px;
@@ -1748,7 +1748,7 @@ input#e-mail, #hidden_iframe {
 }
 
 @media (max-width: 768px) {
-  .social-icon ul li a i {
+  .contact-icons ul li a i {
     line-height: 55px;
     font-size: 25px;
     opacity: 1;
@@ -1756,12 +1756,12 @@ input#e-mail, #hidden_iframe {
 }
 
 @media (min-width:768px) {
-  .social-icon ul li a {
+  .contact-icons ul li a {
     -webkit-transition: all 400ms ease-out 0s;
     -o-transition: all 400ms ease-out 0s;
     transition: all 400ms ease-out 0s;
   }
-  .social-icon ul li a i{
+  .contact-icons ul li a i{
     -webkit-transition: all 400ms ease-out 0s;
     -o-transition: all 400ms ease-out 0s;
     transition: all 400ms ease-out 0s;
