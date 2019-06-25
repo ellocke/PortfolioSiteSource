@@ -15,6 +15,55 @@ body {
   Portfolio section
 ==================================================================*/
 
+  .hero-area {
+    /* text-shadow: 2px 2px 4px #000000; */
+    
+  }
+
+  .hero-area .block h1 {
+    font-size: 6rem;
+  }
+
+  .hero-area .block p {
+    /* color: #afbac4; */
+    font-family: monospace;
+    color: white;
+  }
+
+
+
+  @media (min-width: 768px) {
+
+      .hero-area .block p {
+        font-size: 1.4em;
+      }
+
+      .hero-area .block span.landing-items::selection {
+        color: black!important;
+        background-color: white;
+      }
+
+      .hero-area span.landing-items {
+        background-color: white;
+        color: #353b43;
+        font-weight: 400;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+      }
+
+      /* .hero-area span.landing-items::before {
+        content: "| ";
+      }
+    
+      .hero-area span.landing-items::after {
+        content: " |";
+      } */
+  }
+
+
+
+
+
   .portfolio-items-wrapper .mix {
     padding: 5px;
   }

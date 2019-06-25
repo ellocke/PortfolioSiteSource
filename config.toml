@@ -47,13 +47,12 @@ custom_css = ["css/custom.css"]
 # Banner Section
 [params.banner]
 enable = true
-bgImage = "images/backgrounds/john-barkiple-539580-unsplash.jpg"
-# bgImage = "images/backgrounds/dadasciencedesign_font_1335.png"
+bgImage = "images/backgrounds/fubits_isometric.jpg"
 icon = "tf-ion-play"
 heading = "Freelance Portfolio"
 content= "Computational Social Science | HCI/UX | Data & Information Visualisation | GIS/Mapping | Open Science | Research Data Management"
 btn = true
-btnText="Explore"
+btnText="EXPLORE"
 btnURL="mission"
 
 # call to action
