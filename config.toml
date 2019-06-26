@@ -66,7 +66,7 @@ btnText = "Reach out"
 # counter
 [params.counter]
 enable = false
-bgImage = "images/backgrounds/bg-1.jpg"
+bgImage = "images/backgrounds/dot_map_world_cities.jpg"
 
 # footer
 [params.footer]
