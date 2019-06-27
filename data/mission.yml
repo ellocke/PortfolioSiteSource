@@ -1,7 +1,8 @@
 enable : true
 heading : My
 headingSpan : Mission
-bgImage : images/backgrounds/john-barkiple-539580-unsplash.jpg
+bgImage : images/backgrounds/john-barkiple-539580-unsplash-reg.jpg
+# bgImage : images/backgrounds/bg-2.jpg
 missionItem :
   - name : Ilja Sperling | fubits
     image : images/about/linkedin.jpg

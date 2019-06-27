@@ -13,6 +13,28 @@ body {
 
 /* MOD Landing BEGINN */
 
+.hero-area {
+  background-position: center;
+  /* background-size: auto; */
+}
+
+.bg-2 {
+  background-position: center;
+}
+
+.bg-1 {
+  background-position: center;
+  /* background-size: auto; */
+}
+
+@media (max-width: 768px) {
+  .bg-1, .bg-2 {
+    background-attachment: local;
+    background-origin: border-box;
+    background-size: auto;
+  }
+}
+
 .hero-area .block h1 {
   font-size: 4em;
   text-shadow: 2px 2px 4px #000000;
