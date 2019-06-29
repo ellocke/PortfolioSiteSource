@@ -16,7 +16,7 @@
                 {{"<!-- /responsive nav button -->" | safeHTML}}
 
                 {{"<!-- main nav -->" | safeHTML}}
-                {{ if .IsHome }}
+                <!-- {{ if .IsHome }} -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto navigation-menu">
                                 {{ range $.Site.Menus.nav }}
@@ -28,7 +28,7 @@
                                 {{ end }}
                         </ul>
                 </div>
-                {{ else }}
+                <!-- {{ else }}
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto navigation-menu">
                                 {{ range $.Site.Menus.nav }}
@@ -36,7 +36,7 @@
                                 {{ end }}
                         </ul>
                 </div>
-                {{ end }}
+                {{ end }} -->
                 {{"<!-- /main nav -->" | safeHTML}}
         </div>
 

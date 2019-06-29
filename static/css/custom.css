@@ -10,16 +10,20 @@ body {
   transform: rotate(90deg) !important;
 }
 
-
+.navbar-brand img {
+  margin-top: -10px;
+}
 /* MOD Landing BEGINN */
 
 .hero-area {
   background-position: center;
+  background-attachment: fixed;
   /* background-size: auto; */
 }
 
 .bg-2 {
   background-position: center;
+  background-attachment: local;
 }
 
 .bg-1 {
@@ -28,6 +32,18 @@ body {
 }
 
 @media (max-width: 768px) {
+  
+  .navbar-brand img {
+    margin-top: -10px;
+    height: 33px;
+  }
+
+  .hero-area {
+    background-attachment: fixed;
+    /* background-origin: border-box; */
+    background-size: auto 100vh;
+  }
+
   .bg-1, .bg-2 {
     background-attachment: local;
     background-origin: border-box;
