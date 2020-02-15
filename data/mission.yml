@@ -1,8 +1,8 @@
-enable : true
-heading : My
-headingSpan : Mission
-bgImage : images/backgrounds/john-barkiple-539580-unsplash-reg.jpg
-missionItem :
-  - name : Ilja Sperling | fubits
-    image : images/about/linkedin.jpg
-    content : I'm passionate about helping non-profits build human-centered design solutions to support social action.
+enable: true
+heading: My
+headingSpan: Mission
+bgImage: images/backgrounds/john-barkiple-539580-unsplash-reg.jpg
+missionItem:
+  - name: Ilja Sperling | <a href="https://twitter.com/fubits">fubits</a>
+    image: images/about/linkedin.jpg
+    content: I'm passionate about helping non-profits build human-centered design solutions to support social action.

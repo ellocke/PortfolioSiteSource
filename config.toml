@@ -39,7 +39,7 @@ home= "fubits@Portfolio"
 logo = "images/logo.png"
 
 # Meta data
-description = "Freelance UX/Design Portfolio Ilja Sperling / fubits"
+description = "Freelance UX and Product Design Portfolio Ilja Sperling / fubits"
 author = "Ilja / fubits"
 
 custom_css = ["css/custom.css"]
@@ -50,15 +50,15 @@ enable = true
 bgImage = "images/backgrounds/fubits_isometric.jpg"
 icon = "tf-ion-play"
 heading = "Freelance Portfolio"
-content= "Computational Social Science | HCI/UX | Data&nbsp;&&nbsp;Information Visualisation | GIS/Mapping | Open Science | Research Data Management"
+content = ["Digital Product Design" , "HCI/UX" , "GIS/Mapping" , "Data & Information Visualisation" , "Computational Social Science" , "Research Data Management"]
 btn = true
-btnText="EXPLORE"
-btnURL="mission"
+btnText = "EXPLORE"
+btnURL = "mission"
 
 # call to action
 [params.cta]
 enable = true
-title = "Custom Design Solutions for Not-for-Profit Action"
+title = "Efficient Product Design for Not-for-Profit Action"
 content = ""
 btnURL = "https://keybase.io/fubits/"
 btnText = "Reach out"

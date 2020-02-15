@@ -1,64 +1,58 @@
-enable : true
-heading : My
-headingSpan : Portfolio
+enable: true
+heading: My
+headingSpan: Portfolio
 
-portfolioItem :
+portfolioItem:
+  - image: images/portfolio/dadasciencedesign_font_600.png
+    static: true
 
-    
-  - types : design mapping dataviz
-    image : images/portfolio/dadasciencedesign_font_600.png
-    icon : tf-ion-android-search
-    static : true
+  - image: images/portfolio/designthinking.jpg
+    title: Design Thinking Sprints
+    product: Workshops
+    icon: tf-ion-android-search
+    description: I have successfully facilitated Design Thinking workshops tailored to the needs of audiences from academia and policy. Together, we were able to make the abstract – such as an emerging new policy concept, or an innovative digital product vision – become manifest and actionable.
 
-  - types : design mapping print
-    image : images/portfolio/map_mena.jpg
-    icon : tf-ion-android-search
-    URL : http://dietz-verlag.de/isbn/9783801205485/Krieg-vor-der-Haustuer-Die-Gewalt-in-Europas-Nachbarschaft-und-was-wir-dagegen-tun-koennen-Sarah-Brockmeier-Philipp-Rotmann
-    title : Krieg vor der Haustür
-    product : Print Maps
-    description : A full-paged colored regional map for the front matter, picking up the hue from the book's cover theme. Three tile-sized maps for the back matter, focusing on single states and subregions.
-      
-  - types : design mapping dataviz
-    image : images/portfolio/map_syria_main.jpg
-    icon : tf-ion-android-search
-    URL : https://www.gppi.net/2019/02/17/the-logic-of-chemical-weapons-use-in-syria
-    title : Nowhere to Hide
-    product : Illustrations & Maps
-    description : Double-paged, styleguide compliant vector illustration for a research report, mapping the spatial distribution of 336 chemical attacks in Syria. Three inset maps zoom in on the main theaters.
-    
-  - types : design mapping dataviz
-    image : images/portfolio/map_syria_cases.jpg
-    icon : tf-ion-android-search
-    URL : https://www.gppi.net/2019/02/17/the-logic-of-chemical-weapons-use-in-syria
-    title : Nowhere to Hide
-    product : Illustrations & Maps
-    description : Three case study maps, highlighting changes in territorial control during selected campaigns of chemical attacks. Two styleguide-compliant bicolor schemes represent gains/losses by rebels and state/regime actors. A full-page illustration outlines the deadly path of a helicopter regiment. 
+  - image: images/portfolio/map_mena.jpg
+    URL: http://dietz-verlag.de/isbn/9783801205485/Krieg-vor-der-Haustuer-Die-Gewalt-in-Europas-Nachbarschaft-und-was-wir-dagegen-tun-koennen-Sarah-Brockmeier-Philipp-Rotmann
+    icon: tf-ion-android-search
+    title: Krieg vor der Haustür
+    product: Print Maps
+    description: A full-paged colored regional map for the front matter, picking up the hue from the book's cover theme. Three tile-sized maps for the back matter, focusing on single states and subregions.
 
-  - types : webdesign design concept ux webdev
-    image : images/portfolio/urban_spaces.jpg
-    icon : tf-ion-android-search
-    URL : https://medium.com/@Fubits/urbane-r%C3%A4ume-proteste-weltpolitik-21f05d512cc4
-    title : Urban Spaces Project
-    product : Tech. Product Management
-    description : Conception, technical project coordination, and content implementation of an online-first research paper design, complemented by a regular print product.
-    
-  - types : webdesign design concept ux webdev
-    image : images/portfolio/urban_spaces_print_web_600.jpg
-    icon : tf-ion-android-search
-    URL : https://medium.com/@Fubits/urbane-r%C3%A4ume-proteste-weltpolitik-21f05d512cc4
-    title : Urban Spaces Project
-    product : Tech. Product Management
-    description : This "pilot" involved a team of 30 people from all divisions, and took more than one year from the first workshop to launch.
+  - image: images/portfolio/map_syria_main.jpg
+    URL: https://www.gppi.net/2019/02/17/the-logic-of-chemical-weapons-use-in-syria
+    title: Nowhere to Hide
+    icon: tf-ion-android-search
+    product: Illustrations & Maps
+    description: Double-paged, styleguide compliant vector illustration for a research report, mapping the spatial distribution of 336 chemical attacks in Syria. Three inset maps zoom in on the main theaters.
 
-  - types : design mapping print
-    image : images/portfolio/map_asia.jpg
-    icon : tf-ion-android-search
-    URL : https://www.nomos-shop.de/Hansel-Harnisch-Godehardt-Chinesische-Seidenstra%C3%9Feninitiative-amerikanische-Gewichtsverlagerung/productview.aspx?product=30561
-    title : China's Silk Road
-    product : Print Map
-    description : A full-paged b/w regional map of Asia, including the challenge of emphasizing four subregions.
-    
-  - types : design dataviz webdesign ux print layout concept
-    image : images/portfolio/full_stack_thumb.jpg
-    icon : tf-ion-android-search
-    description : During the last years I have designed products as diverse as data visualizations, responsive single-page and subpage web layouts, a DTP corporate news template, migrated content during a website relaunch of an academic society, or turned a corporate styleguide into a subdomain website.
+  - image: images/portfolio/map_syria_cases.jpg
+    URL: https://www.gppi.net/2019/02/17/the-logic-of-chemical-weapons-use-in-syria
+    title: Nowhere to Hide
+    icon: tf-ion-android-search
+    product: Illustrations & Maps
+    description: Three case study maps, highlighting changes in territorial control during selected campaigns of chemical attacks. Two styleguide-compliant bicolor schemes represent gains/losses by rebels and state/regime actors. A full-page illustration outlines the deadly path of a helicopter regiment.
+
+  - image: images/portfolio/urban_spaces.jpg
+    URL: https://medium.com/@Fubits/urbane-r%C3%A4ume-proteste-weltpolitik-21f05d512cc4
+    title: Urban Spaces Project
+    icon: tf-ion-android-search
+    product: Tech. Product Management
+    description: Conception, technical project coordination, and content implementation of an online-first research paper design, complemented by a regular print product. This pilot involved a team of 30 people from all divisions, and took more than one year from the first workshop to launch.
+
+  # - image: images/portfolio/urban_spaces_print_web_600.jpg
+  #   URL: https://medium.com/@Fubits/urbane-r%C3%A4ume-proteste-weltpolitik-21f05d512cc4
+  #   title: Urban Spaces Project
+  #   icon: tf-ion-android-search
+  #   product: Tech. Product Management
+  #   description: This "pilot" involved a team of 30 people from all divisions, and took more than one year from the first workshop to launch.
+
+  - image: images/portfolio/map_asia.jpg
+    URL: https://www.nomos-shop.de/Hansel-Harnisch-Godehardt-Chinesische-Seidenstra%C3%9Feninitiative-amerikanische-Gewichtsverlagerung/productview.aspx?product=30561
+    title: China's Silk Road
+    icon: tf-ion-android-search
+    product: Print Map
+    description: A full-paged b/w regional map of Asia, including the challenge of emphasizing four subregions.
+
+  - image: images/portfolio/full_stack_thumb.jpg
+    description: During the last years I have designed and implemented products as diverse as data visualizations, responsive single-page and subdomain web layouts, a DTP corporate news template, migrated content during a website relaunch of a national student society, or turned a corporate styleguide PDF into a dynamic website.

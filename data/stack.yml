@@ -1,27 +1,27 @@
-enable : true
-heading : My
-headingSpan : Stack
-stackItem :
-  - icon : tf-dial
-    title : UX & Design Thinking
-    content : 
-    
-  - icon : tf-linegraph
-    title : Data Processing
-    content : # Analysis, Management, Modelling
-    
-  - icon : tf-globe
-    title : GIS & Mapping
-    content : 
-    
-  - icon : tf-genius
-    title : Network Analysis
-    content : 
-    
-  - icon : tf-lifesaver
-    title : Web Development
-    content : 
-    
-  - icon : tf-target3
-    title : Data Visualisation
-    content : 
+enable: true
+heading: My
+headingSpan: Stack
+stackItem:
+  - icon: tf-dial
+    title: Design Thinking
+    content:
+
+  - icon: tf-linegraph
+    title: Data Processing
+    content: # Analysis, Management, Modelling
+
+  - icon: tf-globe
+    title: GIS & Mapping
+    content:
+
+  - icon: tf-genius
+    title: Product Design
+    content:
+
+  - icon: tf-lifesaver
+    title: Web Development
+    content:
+
+  - icon: tf-target3
+    title: Data Visualization
+    content:

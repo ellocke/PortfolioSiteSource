@@ -1,13 +1,15 @@
 {{ if .Site.Data.mission.enable }}
 {{"<!-- Start Testimonial -->" | safeHTML}}
-<section id="mission" class="testimonial overly section bg-2" style='background-image: url("{{ .Site.Data.mission.bgImage | absURL }}")'>
+<section id="mission" class="testimonial overly section bg-2"
+    style='background-image: url("{{ .Site.Data.mission.bgImage | absURL }}")'>
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
-                    <div class="title text-center">
-                            <h2>{{ .Site.Data.mission.heading}} <span class="color">{{ .Site.Data.mission.headingSpan}}</span> </h2>
-                            <div class="border-meghna"></div>
-                        </div>
+                <div class="title text-center">
+                    <h2>{{ .Site.Data.mission.heading}} <span class="color">{{ .Site.Data.mission.headingSpan}}</span>
+                    </h2>
+                    <div class="border-meghna"></div>
+                </div>
                 {{"<!-- testimonial wrapper -->" | safeHTML}}
                 <div id="testimonials">
                     {{ range .Site.Data.mission.missionItem }}
@@ -22,19 +24,19 @@
                         {{"<!-- client info -->" | safeHTML}}
                         <div class="client-info">
                             <div class="client-meta">
-                                <h3>{{ .name }}</h3>
+                                <h3>{{ .name | safeHTML}}</h3>
                                 <span>{{ .date }}</span>
                             </div>
                             <div class="client-comment">
-                                <p>{{ .content }}</p>
+                                <p>{{ .content | safeHTML }}</p>
                             </div>
                         </div>
                     </div>
                     {{"<!-- /testimonial single -->" | safeHTML}}
                     {{ end }}
-                    </div>
                 </div>
             </div>
+        </div>
     </div>
 </section>
 {{"<!-- /testimonial -->" | safeHTML}}

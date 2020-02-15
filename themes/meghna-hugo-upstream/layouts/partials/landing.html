@@ -2,10 +2,12 @@
 {{"<!-- Welcome Slider-->" | safeHTML}}
 <section class="hero-area" style='background-image: url("{{ .Site.Params.banner.bgImage | absURL }}");'>
     <div class="block">
-       {{with .Site.Params.banner.heading}} <h1>{{ . }}</h1>{{ end }}
-       {{with .Site.Params.banner.content}} <p><span class="landing-items">{{ . | safeHTML }}</span></p> {{ end }}
-       {{ if .Site.Params.banner.btn}}
-        <a data-scroll href="#{{ .Site.Params.banner.btnURL}}" class="btn btn-transparent">{{ .Site.Params.banner.btnText}}</a>
+        {{with .Site.Params.banner.heading}} <h1>{{ . }}</h1>{{ end }}
+        <p>{{- range .Site.Params.banner.content -}} <span class="landing-items">{{ . | safeHTML }}</span>{{- end -}}
+        </p>
+        {{ if .Site.Params.banner.btn}}
+        <a data-scroll href="#{{ .Site.Params.banner.btnURL}}"
+            class="btn btn-transparent">{{ .Site.Params.banner.btnText}}</a>
         {{ end }}
     </div>
 </section>
