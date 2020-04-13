@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-    {{- partial "head.html" . -}}
-    <body id="body" data-spy="scroll" data-target=".navbar" data-offset="52">
-        <div id="content">{{- block "main" . }}{{- end }}</div>
-        {{- partial "footer.html" . -}}
-        {{- partial "scripts.html" . -}}
-    </body>
+{{- partial "head.html" . -}}
+
+<body id="body">
+    <div id="content">{{- block "main" . }}{{- end }}</div>
+    {{- partial "footer.html" . -}}
+    {{- partial "scripts.html" . -}}
+</body>
+
 </html>

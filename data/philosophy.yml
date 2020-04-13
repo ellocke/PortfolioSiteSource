@@ -1,16 +1,15 @@
-enable : true
-heading : My
-headingSpan : Philosophy
-aboutItem : 
-- icon : tf-layers
-  title : Data
-  content : Action needs data – not spreadsheets.<br><br>Jailbreak Excel and focus on your goals. With functional data management, automation & reproducibility.
+enable: true
+heading: My
+headingSpan: Philosophy
+aboutItem:
+  - icon: tf-layers
+    title: Data
+    content: Action needs data – not spreadsheets.<br><br>Jailbreak Excel and focus on your goals. With functional data management, pipeline automation & reproducibility.
 
-- icon : tf-magnifying-glass
-  title : Science
-  content : Before turning to Computer Science I finished my B.A. in Politics and Communication Studies. I worked in academic research, PR, and policy. I'm home in both worlds.
+  - icon: tf-magnifying-glass
+    title: Science
+    content: While becoming a Technologist I finished degrees in Politics, Communication, and Computational Social Science. <br>I worked in research, PR, and policy. I'm home in many domains.
 
-- icon : tf-tools
-  title : Design
-  content : What if social research had the UX of Data-Driven Journalism?<br><br>Apply human-centered design principles to address the right questions.
-  
+  - icon: tf-tools
+    title: Design
+    content: What if social research had the elegance and UX of Data-Driven Journalism?<br><br>Apply Product Design methods and Agile approaches to focus on what's relevant.

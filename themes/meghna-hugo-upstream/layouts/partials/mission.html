@@ -1,5 +1,4 @@
 {{ if .Site.Data.mission.enable }}
-{{"<!-- Start Testimonial -->" | safeHTML}}
 <section id="mission" class="testimonial overly section bg-2"
     style='background-image: url("{{ .Site.Data.mission.bgImage | absURL }}")'>
     <div class="container">
@@ -10,34 +9,26 @@
                     </h2>
                     <div class="border-meghna"></div>
                 </div>
-                {{"<!-- testimonial wrapper -->" | safeHTML}}
                 <div id="testimonials">
                     {{ range .Site.Data.mission.missionItem }}
-                    {{"<!-- testimonial single -->" | safeHTML}}
                     <div class="item text-center">
-
-                        {{"<!-- client photo -->" | safeHTML}}
-                        <div class="client-thumb">
+                        <div class="author-thumb">
                             <img src="{{ .image | absURL }}" class="img-fluid" alt="Meghna">
                         </div>
-
-                        {{"<!-- client info -->" | safeHTML}}
-                        <div class="client-info">
-                            <div class="client-meta">
-                                <h3>{{ .name | safeHTML}}</h3>
+                        <div class="author-info">
+                            <div class="author-meta">
+                                <h3>{{ .name | safeHTML }}</h3>
                                 <span>{{ .date }}</span>
                             </div>
-                            <div class="client-comment">
-                                <p>{{ .content | safeHTML }}</p>
+                            <div class="author-comment">
+                                <p>{{ .content }}</p>
                             </div>
                         </div>
                     </div>
-                    {{"<!-- /testimonial single -->" | safeHTML}}
                     {{ end }}
                 </div>
             </div>
         </div>
     </div>
 </section>
-{{"<!-- /testimonial -->" | safeHTML}}
 {{ end }}

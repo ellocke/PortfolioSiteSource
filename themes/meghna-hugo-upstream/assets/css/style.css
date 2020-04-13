@@ -1309,38 +1309,38 @@ a:hover {
   background: rgba(42, 48, 55, 0.7);
 }
 
-.client-info {
+.author-info {
   margin: 0 auto;
   width: 45%;
 }
 
 @media (max-width: 768px) {
-  .client-info {
+  .author-info {
     width: 90%;
   }
 }
 
-.client-comment p {
+.author-comment p {
   color: #afbac4;
   font-size: 18px;
 }
 
-.client-thumb img {
+.author-thumb img {
   border-radius: 50%;
   margin: 0 auto;
   max-width: 115px;
   width: 100%;
 }
 
-.client-meta {
+.author-meta {
   margin: 0 0 10px;
 }
 
-.client-meta h3 {
+.author-meta h3 {
   margin: 15px 0 5px .0;
 }
 
-.client-meta span {
+.author-meta span {
   font-size: 12px;
 }
 

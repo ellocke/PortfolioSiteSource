@@ -6,7 +6,7 @@
         <p>{{- range .Site.Params.banner.content -}} <span class="landing-items">{{ . | safeHTML }}</span>{{- end -}}
         </p>
         {{ if .Site.Params.banner.btn}}
-        <a data-scroll href="#{{ .Site.Params.banner.btnURL}}"
+        <a id="intro-cta" href="#{{ .Site.Params.banner.btnURL}}"
             class="btn btn-transparent">{{ .Site.Params.banner.btnText}}</a>
         {{ end }}
     </div>

@@ -1,12 +1,13 @@
 {{ if .Site.Data.portfolio.enable}}
 {{"<!-- Portfolio Section -->" | safeHTML}}
-<section class="portfolio section" id="portfolio">
+<section class="portfolio section wow fadeIn" data-wow-duration="3s" id="portfolio">
     <div class="container">
         <div class="row ">
             <div class="col-xl-12">
                 {{"<!-- section title -->" | safeHTML}}
                 <div class="title text-center">
-                    <h2> {{ with .Site.Data.portfolio.heading }} {{ . }} {{ end }} <span class="color">{{ with .Site.Data.portfolio.headingSpan }} {{ . }} {{ end }}</span></h2>
+                    <h2> {{ with .Site.Data.portfolio.heading }} {{ . }} {{ end }} <span
+                            class="color">{{ with .Site.Data.portfolio.headingSpan }} {{ . }} {{ end }}</span></h2>
                     <div class="border-meghna"></div>
                 </div>
                 {{"<!-- /section title -->" | safeHTML}}
@@ -17,14 +18,15 @@
             {{"<!-- portfolio item -->" | safeHTML}}
             {{ range .Site.Data.portfolio.portfolioItem }}
             <div class="mix {{ if not (.static) }} portfolio-item {{ end }} col-md-6" onclick="void(0)">
-                    <img class="img-fluid" src="{{ .image | absURL}}" alt="work-image">
-                    <div class="caption">
-                        {{with .title }}<h4>{{.}}</h4>{{end}}
-                        <!-- <h5>{{ .product }}</h5> -->
-                        {{with .description }}<p>{{ . }}</p>{{end}}
-                        {{if .URL }}<a class="search-icon" target="_blank" href="{{ .URL | absURL }}"><i class="{{ .icon }}"></i></a>{{end}}
-                    </div>
+                <img class="img-fluid" src="{{ .image | absURL}}" alt="work-image">
+                <div class="caption">
+                    {{with .title }}<h4>{{.}}</h4>{{end}}
+                    <!-- <h5>{{ .product }}</h5> -->
+                    {{with .description }}<p>{{ . }}</p>{{end}}
+                    {{if .URL }}<a class="search-icon" target="_blank" href="{{ .URL | absURL }}"><i
+                            class="{{ .icon }}"></i></a>{{end}}
                 </div>
+            </div>
             {{ end }}
         </div>
     </div>

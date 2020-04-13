@@ -32,17 +32,40 @@ body {
     /* background-size: auto; */
 }
 
+section#mission {
+    height: calc(100vh);
+}
+
+section#mission .title {
+    padding-bottom: 1.3em;
+}
+
+section#mission div.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em !important;
+}
+
 @media (max-width: 768px) {
     .navbar-brand img {
         margin-top: -10px;
         height: 33px;
     }
+
+    section#mission {
+        height: calc(100vh);
+    }
+
     .hero-area {
         background-attachment: fixed;
         /* background-origin: border-box; */
         background-size: auto 100vh;
     }
-    .bg-1, .bg-2 {
+
+    .bg-1,
+    .bg-2 {
         background-attachment: local;
         background-origin: border-box;
         background-size: auto;
@@ -65,7 +88,8 @@ body {
     color: #fc7233;
 }
 
-.hero-area .block .btn-transparent:hover, .hero-area .block .btn-transparent:active {
+.hero-area .block .btn-transparent:hover,
+.hero-area .block .btn-transparent:active {
     border-color: white;
     color: white;
 }
@@ -74,22 +98,21 @@ body {
     .hero-area .block h1 {
         font-size: 6em;
     }
+
     .hero-area .block p {
         font-size: 1.4em;
         background-color: transparent;
     }
+
     .hero-area .block span.landing-items::selection {
         color: black !important;
         background-color: white;
     }
+
     .hero-area span.landing-items {
         background-color: white;
         color: #353b43;
         font-weight: 400;
-        /* padding-left: 0.5em; */
-        /* padding-right: 0.5em; */
-    }
-    .hero-area span.landing-items {
         margin-left: 0.5em;
         margin-right: 0.5em;
         padding-left: 0.5em;
@@ -116,7 +139,6 @@ body {
 .portfolio-item:before {
     transition: all 0.2s ease-in-out;
     background: #353b43;
-    ;
     opacity: 0;
     top: 0;
     right: 0;
@@ -131,15 +153,18 @@ body {
     height: auto;
 }
 
-.portfolio-item:hover:before, .portfolio-item:active:before {
+.portfolio-item:hover:before,
+.portfolio-item:active:before {
     opacity: 0.8;
 }
 
-.portfolio-item:hover .caption h4, .portfolio-item:active .caption h4 {
+.portfolio-item:hover .caption h4,
+.portfolio-item:active .caption h4 {
     top: 45%;
 }
 
-.portfolio-item:hover .caption, .portfolio-item:active .caption {
+.portfolio-item:hover .caption,
+.portfolio-item:active .caption {
     opacity: 1;
     top: 55%;
 }
@@ -213,18 +238,18 @@ body {
     font-weight: 700;
 }
 
-.client-thumb .img-fluid {
+.author-thumb .img-fluid {
     max-width: 225px !important;
 }
 
-.client-meta h3 {
+.author-meta h3 {
     color: white;
-    font-size: 2em;
+    /* font-size: 2em; */
     margin-top: 1em;
     /* margin-bottom: 1em; */
 }
 
-.client-comment p {
+.author-comment p {
     font-size: 20px;
 }
 
