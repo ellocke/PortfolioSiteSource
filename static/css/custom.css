@@ -20,6 +20,7 @@ section#portfolio {
 
 section#mission {
     height: calc(100vh - 76px);
+    min-height: 600px;
 }
 
 section#mission div.title {
@@ -52,7 +53,6 @@ div.author-meta a {
 .hero-area {
     background-position: center;
     background-attachment: fixed;
-    /* background-size: auto; */
 }
 
 .bg-2 {
@@ -62,7 +62,6 @@ div.author-meta a {
 
 .bg-1 {
     background-position: center;
-    /* background-size: auto; */
 }
 
 @media (max-width: 768px) {
@@ -73,7 +72,6 @@ div.author-meta a {
 
     .hero-area {
         background-attachment: fixed;
-        /* background-origin: border-box; */
         background-size: auto 100vh;
     }
 
