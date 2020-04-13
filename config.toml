@@ -38,7 +38,7 @@ home= "fubits@Portfolio"
 logo = "images/logo.png"
 
 # Meta data
-description = "Freelance Product Design & Data Science Portfolio Ilja Sperling | fubits"
+description = "Freelance Product Design & Data Science Portfolio Ilja Sperling | @fubits"
 author = "Ilja | @fubits"
 
 custom_css = ["css/custom.css"]
@@ -69,7 +69,7 @@ bgImage = "images/backgrounds/dot-map.jpg"
 
 # footer
 [params.footer]
-    copyright = "© Ilja / fubits"
+    copyright = "© Ilja | @fubits"
     copyrightURL = "http://www.dadascience.design/about"
     theme = "© Meghna Hugo by Themefisher"
     themeURL = "https://themes.gohugo.io/meghna-hugo/"

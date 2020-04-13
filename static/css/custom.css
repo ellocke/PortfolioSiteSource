@@ -14,6 +14,39 @@ body {
     margin-top: -10px;
 }
 
+section#portfolio {
+    background-color: #242930;
+}
+
+section#mission {
+    height: calc(100vh - 76px);
+}
+
+section#mission div.title {
+    padding-bottom: 1.3em;
+}
+
+section#mission div.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em !important;
+}
+
+section#services div.service-block {
+    background-color: #242930;
+}
+
+section#services div.service-block i {
+    color: #fc7233;
+}
+
+div.author-meta a {
+    color: #fc7233;
+}
+
+
 /* MOD Landing BEGINN */
 
 .hero-area {
@@ -32,30 +65,10 @@ body {
     /* background-size: auto; */
 }
 
-section#mission {
-    height: calc(100vh);
-}
-
-section#mission .title {
-    padding-bottom: 1.3em;
-}
-
-section#mission div.container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2em !important;
-}
-
 @media (max-width: 768px) {
     .navbar-brand img {
         margin-top: -10px;
         height: 33px;
-    }
-
-    section#mission {
-        height: calc(100vh);
     }
 
     .hero-area {
@@ -78,9 +91,23 @@ section#mission div.container {
 }
 
 .hero-area .block p {
-    /* color: #afbac4; */
+    font-size: 1.2em;
     font-family: monospace;
-    color: white;
+}
+
+.hero-area .block span.landing-items::selection {
+    color: black !important;
+    background-color: white;
+}
+
+.hero-area .block span.landing-items {
+    background-color: white;
+    color: #353b43;
+    font-weight: 400;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    word-wrap: normal;
+    white-space: nowrap;
 }
 
 .hero-area .block .btn-transparent {
@@ -101,29 +128,29 @@ section#mission div.container {
 
     .hero-area .block p {
         font-size: 1.4em;
-        background-color: transparent;
-    }
-
-    .hero-area .block span.landing-items::selection {
-        color: black !important;
-        background-color: white;
-    }
-
-    .hero-area span.landing-items {
-        background-color: white;
-        color: #353b43;
-        font-weight: 400;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
     }
 }
 
-@media (max-width: 768px) {
-    .hero-area span.landing-items:not(:last-child)::after {
-        content: " | ";
+@media (max-width: 600px) {
+    .hero-area .block span.landing-items {
+        white-space: break-spaces;
+        background-color: transparent;
+        color: white;
+        padding-left: 0;
     }
+
+    .hero-area .block span.landing-items:not(:last-child):after {
+        content: '  •';
+        color: #fc7233;
+    }
+}
+
+div .author-comment {
+    margin-top: 1em;
+}
+
+div .author-comment p {
+    color: white;
 }
 
 /* MOD Portfolio END */
@@ -139,6 +166,7 @@ section#mission div.container {
 .portfolio-item:before {
     transition: all 0.2s ease-in-out;
     background: #353b43;
+    ;
     opacity: 0;
     top: 0;
     right: 0;
@@ -239,11 +267,10 @@ section#mission div.container {
 }
 
 .author-thumb .img-fluid {
-    max-width: 225px !important;
+    max-width: 200px !important;
 }
 
 .author-meta h3 {
-    color: white;
     /* font-size: 2em; */
     margin-top: 1em;
     /* margin-bottom: 1em; */
@@ -257,6 +284,18 @@ section#mission div.container {
     margin-top: 1.5em;
 }
 
-.about .block .icon-box {
+#philosophy .block .icon-box {
     margin-bottom: 72px;
+}
+
+#philosophy .content h3 {
+    color: #fc7233
+}
+
+.about .block {
+    height: 95%;
+}
+
+.service-block {
+    height: 90%;
 }

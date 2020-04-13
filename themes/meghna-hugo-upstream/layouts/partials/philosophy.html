@@ -1,6 +1,6 @@
 {{ if .Site.Data.philosophy.enable}}
 {{"<!-- Start About Section -->" | safeHTML}}
-<section class="bg-one about section wow fadeInRightBig" id="philosophy" data-wow-delay="0.1s">
+<section class="bg-one about section" id="philosophy">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -15,7 +15,7 @@
 
             {{ range .Site.Data.philosophy.aboutItem }}
             {{"<!-- About item -->" | safeHTML}}
-            <div class="col-lg-4 text-center">
+            <div class="col-lg-4 text-center wow fadeInRightBig">
                 <div class="block">
                     <div class="icon-box">
                         {{with .icon}}<i class="{{ . }}"></i>{{ end }}

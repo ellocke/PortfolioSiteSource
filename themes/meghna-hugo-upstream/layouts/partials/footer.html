@@ -1,27 +1,33 @@
 <footer id="footer" class="bg-one">
-	<div class="container">
-		<div class="row">
-			<div class="col-xl-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
 
-				{{"<!-- Footer Social Links -->" | safeHTML}}
-				<div class="contact-icons">
-					<ul class="list-inline">
-						{{ range .Site.Params.footer.socialIcon }}
-						<li class="list-inline-item"><a href="{{ .url }}"><i class="{{ .icon }}"></i></a></li>
-						{{ end }}
-					</ul>
-				</div>
+                {{"<!-- Footer Social Links -->" | safeHTML}}
+                <div class="contact-icons">
+                    <ul class="list-inline">
+                        {{ range .Site.Params.footer.socialIcon }}
+                        <li class="list-inline-item"><a href="{{ .url }}"><i class="{{ .icon }}"></i></a></li>
+                        {{ end }}
+                    </ul>
+                </div>
 
-				{{"<!-- copyright -->" | safeHTML}}
-				<div class="copyright text-center">
-					<a href="{{ .Site.BaseURL | absURL }}">
-						<img src="{{ .Site.Params.logo | absURL }}" alt="Meghna" />
-					</a>
-					<br>
-					<p><a href="{{ .Site.Params.footer.copyrightURL | absURL }}"> {{ with .Site.Params.footer.copyright }} {{ . }} {{ end }} </a> | Built with <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://github.com/rstudio/blogdown" target="_blank">Blogdown</a> | Theme (mod.): <a href="{{ .Site.Params.footer.themeURL | absURL }}" target="_blank"> {{ with .Site.Params.footer.theme }} {{ . }} {{ end }} </a> (<a href="{{ .Site.Params.footer.themeLicenseURL | absURL }}" target="_blank"> {{ with .Site.Params.footer.themeLicense }} {{ . }} {{ end }} </a>)</p>
-				</div>
-			</div>
-		</div>
-	</div>
+                {{"<!-- copyright -->" | safeHTML}}
+                <div class="copyright text-center">
+                    <a href="{{ .Site.BaseURL | absURL }}">
+                        <img src="{{ .Site.Params.logo | absURL }}" alt="Meghna" />
+                    </a>
+                    <br>
+                    <p><a href="{{ .Site.Params.footer.copyrightURL | absURL }}">
+                            {{ with .Site.Params.footer.copyright }} {{ . }} {{ end }} </a> | Built with <a
+                            href="https://gohugo.io/" target="_blank">Hugo</a> | Theme (mod.): <a
+                            href="{{ .Site.Params.footer.themeURL | absURL }}" target="_blank">
+                            {{ with .Site.Params.footer.theme }} {{ . }} {{ end }} </a> (<a
+                            href="{{ .Site.Params.footer.themeLicenseURL | absURL }}" target="_blank">
+                            {{ with .Site.Params.footer.themeLicense }} {{ . }} {{ end }} </a>)</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 {{"<!-- /footer -->" | safeHTML}}

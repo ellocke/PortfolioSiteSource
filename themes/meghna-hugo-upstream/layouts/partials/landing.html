@@ -3,8 +3,9 @@
 <section class="hero-area" style='background-image: url("{{ .Site.Params.banner.bgImage | absURL }}");'>
     <div class="block">
         {{with .Site.Params.banner.heading}} <h1>{{ . }}</h1>{{ end }}
-        <p>{{- range .Site.Params.banner.content -}} <span class="landing-items">{{ . | safeHTML }}</span>{{- end -}}
-        </p>
+        <p>{{ range .Site.Params.banner.content }}{{ $domain := . }}{{ with . }}<span
+                class="landing-items">{{$domain | safeHTML}}</span>{{ end }}
+            {{ end }}</p>
         {{ if .Site.Params.banner.btn}}
         <a id="intro-cta" href="#{{ .Site.Params.banner.btnURL}}"
             class="btn btn-transparent">{{ .Site.Params.banner.btnText}}</a>

@@ -1,6 +1,6 @@
 {{ if .Site.Data.portfolio.enable}}
 {{"<!-- Portfolio Section -->" | safeHTML}}
-<section class="portfolio section wow fadeIn" data-wow-duration="3s" id="portfolio">
+<section class="portfolio section" id="portfolio">
     <div class="container">
         <div class="row ">
             <div class="col-xl-12">
@@ -14,7 +14,7 @@
             </div>
         </div>
 
-        <div class="row portfolio-items-wrapper">
+        <div class="row portfolio-items-wrapper wow fadeIn" data-wow-duration="3s">
             {{"<!-- portfolio item -->" | safeHTML}}
             {{ range .Site.Data.portfolio.portfolioItem }}
             <div class="mix {{ if not (.static) }} portfolio-item {{ end }} col-md-6" onclick="void(0)">

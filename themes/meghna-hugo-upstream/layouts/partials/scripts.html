@@ -18,7 +18,7 @@
 
 <script>
     $('#intro-cta').on('click', function () {
-        let navH = $('#navigation').height()
+        let navH = $('#navigation').height() + 16
         let targetTop = $('#mission').offset().top
         $("HTML, BODY").animate({
             scrollTop: (targetTop - navH)

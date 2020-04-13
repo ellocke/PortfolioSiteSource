@@ -2,8 +2,8 @@ enable: true
 heading: My
 headingSpan: Stack
 stackItem:
-  - icon: tf-dial
-    title: Design Thinking
+  - icon: tf-genius
+    title: Product Design
     content:
 
   - icon: tf-linegraph
@@ -14,8 +14,8 @@ stackItem:
     title: GIS & Mapping
     content:
 
-  - icon: tf-genius
-    title: Product Design
+  - icon: tf-dial
+    title: Design Thinking
     content:
 
   - icon: tf-lifesaver
