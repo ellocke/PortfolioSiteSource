@@ -14,10 +14,10 @@
             </div>
         </div>
 
-        <div class="row portfolio-items-wrapper wow fadeIn" data-wow-duration="3s">
+        <div class="row portfolio-items-wrapper" data-wow-duration="3s">
             {{"<!-- portfolio item -->" | safeHTML}}
             {{ range .Site.Data.portfolio.portfolioItem }}
-            <div class="mix {{ if not (.static) }} portfolio-item {{ end }} col-md-6" onclick="void(0)">
+            <div class="mix {{ if not (.static) }} portfolio-item {{ end }} col-md-6 wow fadeIn" onclick="void(0)">
                 <img class="img-fluid" src="{{ .image | absURL}}" alt="work-image">
                 <div class="caption">
                     {{with .title }}<h4>{{.}}</h4>{{end}}
