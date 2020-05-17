@@ -22,7 +22,7 @@
                 <div class="caption">
                     {{with .title }}<h4>{{.}}</h4>{{end}}
                     <!-- <h5>{{ .product }}</h5> -->
-                    {{with .description }}<p>{{ . }}</p>{{end}}
+                    {{with .description | safeHTML}}<p>{{ . }}</p>{{end}}
                     {{if .URL }}<a class="search-icon" target="_blank" href="{{ .URL | absURL }}"><i
                             class="{{ .icon }}"></i></a>{{end}}
                 </div>

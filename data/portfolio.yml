@@ -12,12 +12,33 @@ portfolioItem:
     icon: tf-ion-android-search
     description: I have successfully facilitated Design Thinking workshops tailored to the needs of audiences from academia and policy. Together, we were able to make the abstract – such as an emerging new policy concept, or an innovative digital product vision – become manifest and actionable.
 
+  - image: images/portfolio/cw-website-storytelling.jpg
+    URL: http://dietz-verlag.de/isbn/9783801205485/Krieg-vor-der-Haustuer-Die-Gewalt-in-Europas-Nachbarschaft-und-was-wir-dagegen-tun-koennen-Sarah-Brockmeier-Philipp-Rotmann
+    icon: tf-ion-android-search
+    title: Nowhere To Hide - Web Project
+    product: Website
+    description: "My first product design journey. Feature-rich static website for a 3-chapter essay & and an interactive data portal. 3 months of intense product design and web development work (and 99% Open Source with a minimal stack).<br>Features: map-based scrollytelling, case study components, timeline, audio snippets."
+
+  - image: images/portfolio/cw-website-data-portal.jpg
+    URL: http://dietz-verlag.de/isbn/9783801205485/Krieg-vor-der-Haustuer-Die-Gewalt-in-Europas-Nachbarschaft-und-was-wir-dagegen-tun-koennen-Sarah-Brockmeier-Philipp-Rotmann
+    icon: tf-ion-android-search
+    title: Nowhere To Hide - Data Portal
+    product: Website
+    description: "The front-end part of an end-to-end data pipeline: interactive map with dynamic incident clustering, incident cards, and a data view. Made with leaflet, crossfilter, dataTables, and a bit of D3.<br>The data is auto-fed via a CI/CD-based data pipeline."
+
   - image: images/portfolio/map_mena.jpg
     URL: http://dietz-verlag.de/isbn/9783801205485/Krieg-vor-der-Haustuer-Die-Gewalt-in-Europas-Nachbarschaft-und-was-wir-dagegen-tun-koennen-Sarah-Brockmeier-Philipp-Rotmann
     icon: tf-ion-android-search
     title: Krieg vor der Haustür
     product: Print Maps
     description: A full-paged colored regional map for the front matter, picking up the hue from the book's cover theme. Three tile-sized maps for the back matter, focusing on single states and subregions.
+
+  - image: images/portfolio/urban_spaces.jpg
+    URL: https://medium.com/@Fubits/urbane-r%C3%A4ume-proteste-weltpolitik-21f05d512cc4
+    title: Urban Spaces Project
+    icon: tf-ion-android-search
+    product: Tech. Product Management
+    description: Conception, technical project coordination, and content implementation of an online-first research paper design, complemented by a regular print product. This pilot involved a team of 30 people from all divisions, and took more than one year from the first workshop to launch.
 
   - image: images/portfolio/map_syria_main.jpg
     URL: https://www.gppi.net/2019/02/17/the-logic-of-chemical-weapons-use-in-syria
@@ -32,13 +53,6 @@ portfolioItem:
     icon: tf-ion-android-search
     product: Illustrations & Maps
     description: Three case study maps, highlighting changes in territorial control during selected campaigns of chemical attacks. Two styleguide-compliant bicolor schemes represent gains/losses by rebels and state/regime actors. A full-page illustration outlines the deadly path of a helicopter regiment.
-
-  - image: images/portfolio/urban_spaces.jpg
-    URL: https://medium.com/@Fubits/urbane-r%C3%A4ume-proteste-weltpolitik-21f05d512cc4
-    title: Urban Spaces Project
-    icon: tf-ion-android-search
-    product: Tech. Product Management
-    description: Conception, technical project coordination, and content implementation of an online-first research paper design, complemented by a regular print product. This pilot involved a team of 30 people from all divisions, and took more than one year from the first workshop to launch.
 
   # - image: images/portfolio/urban_spaces_print_web_600.jpg
   #   URL: https://medium.com/@Fubits/urbane-r%C3%A4ume-proteste-weltpolitik-21f05d512cc4
