@@ -17,7 +17,7 @@ portfolioItem:
     icon: tf-ion-android-search
     title: Nowhere To Hide - Web Project
     product: Website
-    description: "My first product design journey. Feature-rich static website for a 3-chapter essay & and an interactive data portal. 3 months of intense product design and web development work (and 99% Open Source with a minimal stack).<br>Features: map-based scrollytelling, case study components, timeline, audio snippets."
+    description: "My first full-stack product design journey. Feature-rich static website for a 3-chapter essay & and an interactive data portal. 3 months of intense product design and web development work (and 99% Open Source with a minimal stack).<br>Features: map-based scrollytelling, case study components, timeline, audio snippets."
 
   - image: images/portfolio/cw-website-data-portal.jpg
     URL: http://dietz-verlag.de/isbn/9783801205485/Krieg-vor-der-Haustuer-Die-Gewalt-in-Europas-Nachbarschaft-und-was-wir-dagegen-tun-koennen-Sarah-Brockmeier-Philipp-Rotmann
