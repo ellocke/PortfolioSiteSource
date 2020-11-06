@@ -192,19 +192,23 @@ div .author-comment p {
 .portfolio-item:hover .caption,
 .portfolio-item:active .caption {
     opacity: 1;
-    top: 55%;
+    /* top: 55%; */
 }
 
 .portfolio-item .caption {
     position: absolute;
-    top: 50%;
+    /* transform: translateY(-50%); */
     left: 0;
+    top: 0;
     opacity: 0;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
     z-index: 9;
     transition: all 0.2s ease-in-out;
     text-align: center;
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 1em;
+    display: grid;
+    align-content: center;
 }
 
 .portfolio-item .caption h4 {
@@ -231,6 +235,7 @@ div .author-comment p {
     display: inline-block;
     font-size: 20px;
     border-radius: 30px;
+    margin: 0 auto;
 }
 
 .portfolio-item .caption .search-icon i {
@@ -296,4 +301,6 @@ div .author-comment p {
 
 .service-block {
     height: 90%;
+    box-shadow: 2px 2px 5px rgba(44, 44, 44, .3),
+        13px 13px 0 rgba(255, 255, 255, 0.1);
 }

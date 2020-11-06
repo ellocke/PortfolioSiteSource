@@ -49,7 +49,7 @@ enable = true
 bgImage = "images/backgrounds/fubits_isometric.jpg"
 icon = "tf-ion-play"
 heading = "Freelance Portfolio"
-content = ["Product Design & UX", "Computational Social Science" , "GIS/Mapping" , "Data & Information Visualisation" , "Research Data Management","Open Science"]
+content = ["Product Development", "UX", "Computational Social Science" , "GIS/Mapping" , "Data & Information Visualization" , "Data Management", "Information Security"]
 btn = true
 btnText = "EXPLORE"
 btnURL = "mission"
@@ -57,7 +57,7 @@ btnURL = "mission"
 # call to action
 [params.cta]
 enable = true
-title = "Functional Product Design for Non-Profit Challenges"
+title = "Lean Product Development for Non-Profit Challenges"
 content = ""
 btnURL = "https://keybase.io/fubits/"
 btnText = "Reach out"
