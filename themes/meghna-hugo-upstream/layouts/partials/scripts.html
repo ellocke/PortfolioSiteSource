@@ -17,11 +17,12 @@
 <script src="{{ $script.Permalink }}"></script>
 
 <script>
-    $('#intro-cta').on('click', function () {
-        let navH = $('#navigation').height() + 16
-        let targetTop = $('#mission').offset().top
-        $("HTML, BODY").animate({
-            scrollTop: (targetTop - navH)
-        }, 500);
-    });
+  $('#intro-cta').on('click', function () {
+    let navH = $('#navigation').height() + 16
+    let targetTop = $('#mission').offset().top - navH
+    console.log(targetTop)
+    $("HTML, BODY").animate({
+      scrollTop: (targetTop)
+    }, 500);
+  });
 </script>
